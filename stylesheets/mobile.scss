@@ -243,9 +243,10 @@
 			.text
 			{					
 				margin-top: 20px;
-				height: 200px;
-				padding-left: 25px;
-
+				height: 500px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				font-size: 18px;
 				font-family: 'Source Sans Pro', sans-serif;
 				overflow: auto;
