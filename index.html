@@ -1,0 +1,164 @@
+<html>
+    <head>
+		<meta charset="UTF-8"> 
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+			  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+	
+    <body>
+<!-- start header  -->
+		<header>
+			<nav class="nav container-fluid">
+				<ul>
+					<li id="img"></li>
+					<li class="hidden-md hidden-lg">
+						<button class="hamburger" onClick="menu()"></button>	
+					</li>
+					<li class="this menu"><a href="#">Serwis</a></li>
+					<li class="menu"><a href="#">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="#">Części</a></li>
+					<li class="menu"><a href="#">Pomoc drogowa</a></li>
+					<li class="menu"><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+<!-- end header -->
+
+<!-- start slider -->
+		<div id="slider">
+			
+			<div class="col-lg-4">
+				<h2>POWIERZ SWÓJ SAMOCHÓD</h2>
+				<h2>DO NAPRAWY SPECJALISTOM</h2>
+			</div>
+			
+		</div>
+<!-- end slider -->
+
+<!-- start services -->
+	<div id="services">	
+		<div id="entry">
+			<div class="pasek"></div>
+				<div id="napis">CZYM SIE ZAJMUJEMY</div>
+			<div class="pasek"></div>
+		</div>
+	
+		<ul>
+			<li class="img item"><img src="svg_files/serwis.svg" height="100%" width="100%"></li>
+			
+				<li class="text item">SERWIS</li>
+			
+			<li class="img item"><img src="svg_files/czesci.svg" height="100%" width="100%"></li>
+			
+				<li class="text item">CZĘŚCI ORYGINALNE I ZAMIENNIKI</li>
+			
+			<li class="img item"><img src="svg_files/naprawy.svg" height="100%" width="100%"></li>
+			
+				<li class="text item">NAPRAWY BLACHARSKO-LAKIERNICZE</li>
+			
+			<li class="img item"><img src="svg_files/pomoc_drogowa.svg" height="100%" width="100%"></li>
+			
+				<li class="text item">POMOC DROGOWA</li>
+		
+
+	
+		</ul>
+
+	</div>
+<!-- end services -->
+
+<!-- start aboutus -->
+		<div id="aboutus">
+			
+			<div id="entry">
+				<div class="pasek"></div>
+					<div id="napis">O NAS</div>
+				<div class="pasek"></div>
+			</div>
+		
+		<ul>
+		<li class="img"><img src="images/engine.jpg" height="100%" width="100%"></li>	
+		<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus rhoncus viverra. Etiam tincidunt bibendum dapibus. Aliquam gravida tellus nulla, eget lacinia purus tincidunt eu. Mauris tellus sapien, viverra a neque vitae, euismod bibendum enim. Nullam finibus tincidunt ex eu iaculis. Praesent laoreet id quam vel aliquet.</li>
+		</ul>
+		
+		</div>
+<!-- end aboutus -->
+
+<!-- start parallax -->
+		<div id="parallax">
+					<div id="napis1" class="display-center">OFERUJEMY SAMOCHODY ZASTĘPCZE</div>
+					<div id="napis2" class="display-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+		</div>
+<!-- end parallax -->
+		
+<!-- start marki -->
+		<div id="marki">
+			<div id="entry">
+				<div class="pasek"></div>
+					<div id="napis">NAPRAWIAMY SAMOCHODY WSZYSTKICH MAREK</div>
+				<div class="pasek"></div>
+			</div>
+		
+
+			<div id="znaczki">
+			
+					<img class="img" src="marki/ford.png"  alt="ford">
+					<img class="img" src="marki/mazda.png" alt="mazda">
+
+					
+					<img class="img" src="marki/sberski.png" alt="sberski">
+					<img class="img" src="marki/skoda.png" alt="skoda">
+
+
+					<img class="img" src="marki/renault.png" alt="renault">
+					<img class="img" src="marki/bmw.png" alt="bmw">
+
+
+					<img class="img" src="marki/peugeot.png" alt="peugeot">
+					<img class="img" src="marki/toyota.png" alt="toyota">
+			</div>
+			
+		</div>
+<!-- end marki -->
+		
+<!-- start map -->
+		<div id="map">
+		<iframe src="https://www.google.com/maps?q=ŻORY OKRĘŻNA 3 &output=embed" width="100%" height="425" frameborder="0" style="border:0;"></iframe>
+		</div>
+<!-- end map -->
+		
+<!-- start footer -->
+		<footer>
+			
+			<div id="napis1">&#128241;</div>
+			<div id="napis2">32/ 43 43  493</div>
+			<div id="napis3">POROZMAWIAJ Z NASZYM SPECJALISTĄ</div>
+			<div id="napis4">LUB NAPISZ DO NAS</div>
+			<div id="napis5">ul. Okrężna 3</div>
+			<div id="napis5">44-240 Żory</div>
+			<div id="napis5">euroamiwal@biuro.pl</div>
+			<div id="napis6">euroamiwal@biuro.pl</div>
+			
+		</footer>
+<!-- end footer -->
+		
+
+		<script>
+			function menu()
+			{
+				document.getElementsByClassName("menu").style.visibility="visible";
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,229 @@
+<html>
+    <head>
+		<meta charset="UTF-8"> 
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+			  
+		<link rel="stylesheet" href="style.css">
+    </head>
+	
+    <body>
+<!-- start topnavbar -->
+		<header>
+			
+	
+		</header>
+<!-- end topnavbar -->
+
+<!-- start serwis -->
+		<div id="serwis">
+			
+			<div class="row mg-bottom15">
+				<div class="col-lg-2 bottom"></div>
+					<div id="napis" class="col-lg-3">
+						CZYM SIE ZAJMUJEMY?
+					</div>
+				<div class="col-lg-2 bottom"></div>
+			</div>
+			
+			<div class="row">
+				<div id="row1_title1" class="col-lg-5 padd250 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> MECHANIKA POJAZDOWA
+				</div>
+				<div id="row1_title2" class="col-lg-5 padd190 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> DIAGNOSTYKA PODWOZIA - USTAWIENIE GEOMETRII KÓŁ
+				</div>
+			</div>
+
+			
+			
+			<div class="row  mg-bottom25">
+				<div id="row1_text1" class="col-lg-3 padd100 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+				<div id="row1_text2" class="col-lg-5 padd270 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div id="row2_title1" class="col-lg-5 padd250 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> DIAGNOSTYKA KOMPUTEROWA
+				</div>
+				<div id="row2_title2" class="col-lg-5 padd190 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> OPONY - WYMIANA SPRZEDAŻ
+				</div>
+			</div>
+			
+			
+			<div class="row  mg-bottom25">
+				<div id="row2_text1" class="col-lg-3 padd100 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+				<div id="row2_text2" class="col-lg-5 padd270 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+			</div>
+			
+			<div class="row">
+				<div id="row3_title1" class="col-lg-5 padd250 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> 
+					KLIMATYZACJA - NAPELNIANIE, ODGRZYBIANIE, SERWIS
+				</div>
+				<div id="row3_title2" class="col-lg-5 padd100 title">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i> LOREM IPSUM!
+				</div>
+			</div>
+			
+			
+			<div class="row  mg-bottom25">
+				<div id="row3_text1" class="col-lg-3 padd100 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+				<div id="row3_text2" class="col-lg-5 padd270 message">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+			</div>
+			
+		</div>
+<!-- end serwis -->
+
+
+<!-- start footer -->
+		<footer>
+			
+			<div id="napis1">&#128241;</div>
+			<div id="napis2">32/ 43 43  493</div>
+			<div id="napis3">POROZMAWIAJ Z NASZYM SPECJALISTĄ</div>
+			<div id="napis4"><br><br>LUB NAPISZ DO NAS</div>
+			<div id="napis5">ul. Okrężna 3</div>
+			<div id="napis5">44-240 Żory</div>
+			<div id="napis5">euroamiwal@biuro.pl</div>
+			<div id="napis6">euroamiwal@biuro.pl</div>
+			
+		</footer>
+<!-- end footer -->
+	
+					
+		<script>
+var i = 0;
+var title = ["row1_title1", "row1_title2", "row2_title1", "row2_title2", "row3_title1", "row3_title2"];
+var text = ["row1_text1", "row1_text2", "row2_text1", "row2_text2", "row3_text1", "row3_text2"];
+var opacity = 0;
+
+function setOpacity(item)
+{
+	document.getElementById(item).style.opacity=opacity;
+}
+			
+function core()
+{		
+	window.setInterval
+	(
+		function()
+		{
+			if (i<title.length)
+			{
+				title.forEach(setOpacity);
+				text.forEach(setOpacity);
+				opacity += 0.05;
+			}
+		}, 100
+	);
+	
+	
+			var isShown = false;
+		
+		$( window ).resize(function() 
+	    {
+			window.location.assign("serwis.html");
+		});
+		generate_page();
+		function generate_page()
+		{
+			if (window.innerWidth<800)
+			{
+				if (!document.getElementById("hamburger_menu")) 
+				{
+					var code = 			'<div id="hamburger_btn" class="col-xs-2" onClick="show_mobile_menu()">'+
+							  ' <div class="btn"></div>'+
+						     '  <div class="btn"></div>'+
+							  ' <div class="btn"></div>'+
+												'</div>'+
+				'<div id="headerimg" class="col-xs-10">'+
+'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="100%" width="100%">'+
+												'</div>'+
+							 '<div id="hamburger_menu">'+
+						'<div class="item">Item 1</div>'+
+						'<div class="item">Item 2</div>'+
+						'<div class="item">Item 3</div>'+
+						'<div class="item">Item 4</div>'+
+						'<div class="item">Item 5</div>'+
+						'</div>';
+			
+				
+					$('header').append(code);
+				}
+			}
+			else
+			{
+					var code = 		
+						'<div id="menu">'+
+			'<div id="img" class="col-lg-2">'+
+				'<a href="index.html">'+
+					'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="80" width="100%">'+
+				'</a>'+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+						'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="serwis.html">Serwis</a> '+
+			'</div>'+
+			'<div class="col-lg-2 display-center">'+
+				 '<a href="naprawy.html">Naprawy blacharsko-lakiernicze</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="czesci.html">Części</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				 '<a href="pomoc_drogowa.html">Pomoc drogowa</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="kontakt.html">Kontakt</a> '+
+			'</div></div>';
+				
+					$('header').append(code);	
+			}
+		}
+		
+		function show_mobile_menu()
+		{
+			if (!isShown)
+			{
+				document.getElementById("hamburger_menu").style.visibility="visible";
+				isShown = true;
+			}
+			else
+			{
+				document.getElementById("hamburger_menu").style.visibility="hidden";
+				isShown=false;
+			}
+		}
+}
+
+core();
+</script>
+		
+		
+	</body>
+</html>

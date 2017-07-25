@@ -1,0 +1,188 @@
+<html>
+    <head>
+		<meta charset="UTF-8"> 
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+	
+    <body>
+<!-- start topnavbar -->
+		<header>
+			
+	
+		</header>>
+<!-- end topnavbar -->
+
+<!-- start kontakt -->
+<div id="kontakt">
+	
+
+	<div class="row">
+		<div class="napis1">Bądźmy w kontakcie
+		</div>
+		<div id="form">	
+		<form action="/action_page.php">
+
+			  <input type="text" class="input"  name="firstname" placeholder="Imię:"><br>
+			  <input type="text" class="input" name="lastname" placeholder="Nazwisko:"><br>
+			  <input type="text" class="input" name="mail" placeholder="Email:"><br>
+			  <input type="text" class="input" id="message" name="message" height="150px" placeholder="Wiadomość:"><br>
+			  <br>
+			  <input id="submit" type="submit" value="Submit">
+		</form> 
+		</div>
+	</div>
+<div id="contentBox">
+
+ <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+    <div id="column1" style="float: left; margin:0; width:20px%;">
+		<i class="fa fa-map-marker" aria-hidden="true"></i> 
+		<br>
+	
+		<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		
+		<br>
+		<i class="fa fa-phone" aria-hidden="true"></i>
+		
+		<br>
+		<i class="fa fa-info" aria-hidden="true"></i>
+    </div>
+
+    <div id="column2" style="float: left; padding-left:10em margin:0;width:400px;">
+		ul. Okrężna 3 44-240 Żory
+		<br>
+		
+		euroamiwal@biuro.pl
+		
+		<br>
+		32/ 43 43 493
+		
+		<br><br>
+		Godziny otwarcia:
+		<br>
+poniedziałek:	08:00 - 18:00<br>
+wtorek:			08:00 - 18:00<br>
+środa:			08:00 - 18:00<br>
+czwartek:		08:00 - 18:00<br>
+piątek:			08:00 - 18:00<br>
+sobota:			08:00 - 14:00<br>
+    </div>
+
+</div>
+	
+</div>
+<!-- end kontakt -->
+
+<!-- start map -->
+<div id="map">
+<iframe src="https://www.google.com/maps?q=ŻORY OKRĘŻNA 3 &output=embed" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+</div>
+<!-- end map -->
+
+<!-- start footer -->
+		<footer>
+			
+			<div id="napis1">&#128241;</div>
+			<div id="napis2">32/ 43 43  493</div>
+			<div id="napis3">POROZMAWIAJ Z NASZYM SPECJALISTĄ</div>
+			<div id="napis4"><br><br>LUB NAPISZ DO NAS</div>
+			<div id="napis5">ul. Okrężna 3</div>
+			<div id="napis5">44-240 Żory</div>
+			<div id="napis5">euroamiwal@biuro.pl</div>
+			<div id="napis6">euroamiwal@biuro.pl</div>
+			
+		</footer>
+<!-- end footer -->
+	</body>
+	<script>
+			var isShown = false;
+		
+		$( window ).resize(function() 
+	    {
+			window.location.assign("kontakt.html");
+			console.log("rld");
+		});
+		generate_page();
+		function generate_page()
+		{
+			if (window.innerWidth<800)
+			{
+				if (!document.getElementById("hamburger_menu")) 
+				{
+					var code = 			'<div id="hamburger_btn" class="col-xs-2" onClick="show_mobile_menu()">'+
+							  ' <div class="btn"></div>'+
+						     '  <div class="btn"></div>'+
+							  ' <div class="btn"></div>'+
+												'</div>'+
+				'<div id="headerimg" class="col-xs-10">'+
+'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="100%" width="100%">'+
+												'</div>'+
+							 '<div id="hamburger_menu">'+
+						'<div class="item">Item 1</div>'+
+						'<div class="item">Item 2</div>'+
+						'<div class="item">Item 3</div>'+
+						'<div class="item">Item 4</div>'+
+						'<div class="item">Item 5</div>'+
+						'</div>';
+			
+				
+					$('header').append(code);
+				}
+			}
+			else
+			{
+					var code = 		
+						'<div id="menu">'+
+			'<div id="img" class="col-lg-2">'+
+				'<a href="index.html">'+
+					'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="80" width="100%">'+
+				'</a>'+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+						'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="serwis.html">Serwis</a> '+
+			'</div>'+
+			'<div class="col-lg-2 display-center">'+
+				 '<a href="naprawy.html">Naprawy blacharsko-lakiernicze</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="czesci.html">Części</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				 '<a href="pomoc_drogowa.html">Pomoc drogowa</a> '+
+			'</div>'+
+			'<div class="col-lg-1 display-center">'+
+				' <a href="kontakt.html">Kontakt</a> '+
+			'</div></div>';
+				
+					$('header').append(code);	
+			}
+		}
+		
+		function show_mobile_menu()
+		{
+			if (!isShown)
+			{
+				document.getElementById("hamburger_menu").style.visibility="visible";
+				isShown = true;
+			}
+			else
+			{
+				document.getElementById("hamburger_menu").style.visibility="hidden";
+				isShown=false;
+			}
+		}
+	</script>
+</html>
