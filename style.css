@@ -134,6 +134,30 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
 
+  #marki {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+    #marki #napis {
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Source Sans Pro', sans-serif;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      border-bottom-style: solid; }
+    #marki #entry {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    #marki .pasek {
+      margin-top: 40px;
+      width: 30%;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: lightgray; }
+    #marki #znaczki {
+      margin-top: 15px; }
+
   #aboutus {
     background-color: #f4f8f9;
     padding-top: 15px;
