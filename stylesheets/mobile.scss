@@ -106,12 +106,36 @@
 		}
 	}
 	
-	.h500
+	.h360
 	{
-		position: relative;
-		right: 38px;
-		height: 360px;
-		width: 110%;
+		ul
+		{
+			width: 100%;
+		}
+		margin-left: auto;
+		height: 400px;
+	}
+	
+	.header-fixed
+	{
+		
+		background-color: white;;
+		z-index: 100;
+		position: fixed;
+		left: 25%;
+		top: 0px;
+		
+		ul
+		{
+			display: flex;
+			justify-content: center;
+			
+			width: 110%;
+			li
+			{
+				background-color: white;;
+			}
+		}
 	}
 
 	

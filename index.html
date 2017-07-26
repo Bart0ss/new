@@ -155,7 +155,7 @@
 <!-- end footer -->
 			<script>
 			
-			var isShown=false;
+			var isShown=true;
 			
 			function parse()
 			{
@@ -182,6 +182,23 @@
 					}
 				}
 			}
+				
+			$(document).ready(function() 
+			{ 
+			  $(window).scroll(function() 
+			  {
+				if ($(window).scrollTop() > 50) 
+				{
+					$('header').addClass('header-fixed');
+				}
+				if ($(window).scrollTop() < 50) 
+				{
+					$('header').removeClass('header-fixed');
+				}
+			  });
+			});
+
+				parse();
 			
 	   </script>
 
