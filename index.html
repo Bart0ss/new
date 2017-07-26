@@ -22,13 +22,45 @@
 				<ul>
 					<li id="img"></li>
 					<li class="hidden-md hidden-lg">
-						<button class="hamburger" onClick="menu()"></button>	
+						<button class="hamburger" onClick="parse()"></button>	
 					</li>
 					<li class="this menu"><a href="#">Serwis</a></li>
 					<li class="menu"><a href="#">Naprawy Blacharsko-lakiernicze</a></li>
 					<li class="menu"><a href="#">Części</a></li>
 					<li class="menu"><a href="#">Pomoc drogowa</a></li>
 					<li class="menu"><a href="#">Kontakt</a></li>
+					
+		<script>
+			
+			var isShown=false;
+			
+			function parse()
+			{
+				if (!isShown)
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="visible";
+					}
+					isShown=true;
+				}
+				else
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="hidden";
+						isShown=false;
+					}
+				}
+			}
+			
+	   </script>
+				
+					
 				</ul>
 			</nav>
 		</header>
@@ -153,12 +185,6 @@
 <!-- end footer -->
 		
 
-		<script>
-			function menu()
-			{
-				document.getElementsByClassName("menu").style.visibility="visible";
-			}
-		</script>
 	</body>
 
 </html>
