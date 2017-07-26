@@ -158,7 +158,15 @@
 			{
 				window.location.href = "index.html";
 			}
-			var isShown=false;
+			var isShown;
+			if($( window ).width() >= 769)
+			{
+				isShown=false;
+			}
+			else
+			{
+				isShown=true;
+			}
 			
 			function parse()
 			{
