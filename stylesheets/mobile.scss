@@ -9,7 +9,6 @@
 
 	header
 	{	
-		
 		height: 100px;
 		text-align: center;
 		
@@ -497,6 +496,46 @@
 			border-bottom-style: solid;
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
+		}
+	}
+	
+	#serwis
+	{
+		height: 800px;
+		margin-top: 30px;
+				
+		#napis
+		{
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Source Sans Pro', sans-serif;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		#entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+		
+		ul
+		{
+			text-align: center;
+			li
+			{
+				margin-top: 15px;
+				list-style: none;
+			}
 		}
 	}
 }

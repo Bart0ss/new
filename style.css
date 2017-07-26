@@ -7,6 +7,9 @@
     overflow-x: hidden; }
 
   header {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
     margin-top: 30px;
     height: 100px; }
     header .nav {
@@ -42,6 +45,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        padding-left: 30px;
         align-content: center;
         margin: 0;
         padding: 0;
@@ -55,7 +59,7 @@
           width: 50px;
           height: 50px;
           padding-top: 20px;
-          color: black;
+          color: #1a8ee5;
           font-weight: bold; }
 
   #slider {
@@ -269,7 +273,30 @@
       padding-left: 900px;
       font-size: 14px;
       font-family: 'Source Sans Pro', sans-serif;
-      font-weight: bold; } }
+      font-weight: bold; }
+
+  #serwis {
+    height: 500px;
+    margin-top: 15px; }
+    #serwis #napis {
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Source Sans Pro', sans-serif;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      border-bottom-style: solid; }
+    #serwis #entry {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    #serwis .pasek {
+      margin-top: 40px;
+      width: 30%;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: lightgray; }
+    #serwis ul li {
+      list-style: none; } }
 @media screen and (max-width: 768px) {
   body {
     max-width: 100%;
@@ -597,6 +624,32 @@
       width: 30%;
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      border-bottom-color: lightgray; } }
+      border-bottom-color: lightgray; }
+
+  #serwis {
+    height: 800px;
+    margin-top: 30px; }
+    #serwis #napis {
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Source Sans Pro', sans-serif;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      border-bottom-style: solid; }
+    #serwis #entry {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    #serwis .pasek {
+      margin-top: 40px;
+      width: 30%;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: lightgray; }
+    #serwis ul {
+      text-align: center; }
+      #serwis ul li {
+        margin-top: 15px;
+        list-style: none; } }
 
 /*# sourceMappingURL=style.css.map */
