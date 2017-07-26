@@ -20,15 +20,15 @@
 		<header>
 			<nav class="nav container-fluid">
 				<ul>
-					<li id="img"></li>
+					<li id="img" onClick="url()"></li>
 					<li class="hidden-md hidden-lg">
 						<button class="hamburger" onClick="parse()"></button>	
 					</li>
-					<li class="this menu"><a href="#">Serwis</a></li>
-					<li class="menu"><a href="#">Naprawy Blacharsko-lakiernicze</a></li>
-					<li class="menu"><a href="#">Części</a></li>
-					<li class="menu"><a href="#">Pomoc drogowa</a></li>
-					<li class="menu"><a href="#">Kontakt</a></li>
+					<li class="menu"><a href="serwis.html">Serwis</a></li>
+					<li class="menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="czesci.html">Części</a></li>
+					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
+					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
 				</ul>	
 			</nav>
 		</header>
@@ -154,8 +154,11 @@
 		</footer>
 <!-- end footer -->
 			<script>
-			
-			var isShown=true;
+			function  url()
+			{
+				window.location.href = "index.html";
+			}
+			var isShown=false;
 			
 			function parse()
 			{
@@ -198,7 +201,7 @@
 			  });
 			});
 
-				parse();
+			parse();
 			
 	   </script>
 

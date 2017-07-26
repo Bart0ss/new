@@ -19,21 +19,30 @@
     <body>
 <!-- start topnavbar -->
 		<header>
-			
-	
+			<nav class="nav container-fluid">
+				<ul>
+					<li id="img" onClick="url()"></li>
+					<li class="hidden-md hidden-lg">
+						<button class="hamburger" onClick="parse()"></button>	
+					</li>
+					<li class="this menu"><a href="serwis.html">Serwis</a></li>
+					<li class="menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="czesci.html">Części</a></li>
+					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
+					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
+				</ul>	
+			</nav>
 		</header>
 <!-- end topnavbar -->
 
 <!-- start serwis -->
-		<div id="serwis">
+	<div id="serwis">
 			
-			<div class="row mg-bottom15">
-				<div class="col-lg-2 bottom"></div>
-					<div id="napis" class="col-lg-3">
-						CZYM SIE ZAJMUJEMY?
-					</div>
-				<div class="col-lg-2 bottom"></div>
-			</div>
+		<div id="entry">
+			<div class="pasek"></div>
+				<div id="napis">CZYM SIE ZAJMUJEMY</div>
+			<div class="pasek"></div>
+		</div>
 			
 			<div class="row">
 				<div id="row1_title1" class="col-lg-5 padd250 title">
@@ -95,7 +104,7 @@
 				</div>
 			</div>
 			
-		</div>
+	</div>
 <!-- end serwis -->
 
 
@@ -114,115 +123,58 @@
 		</footer>
 <!-- end footer -->
 	
-					
-		<script>
-var i = 0;
-var title = ["row1_title1", "row1_title2", "row2_title1", "row2_title2", "row3_title1", "row3_title2"];
-var text = ["row1_text1", "row1_text2", "row2_text1", "row2_text2", "row3_text1", "row3_text2"];
-var opacity = 0;
 
-function setOpacity(item)
-{
-	document.getElementById(item).style.opacity=opacity;
-}
-			
-function core()
-{		
-	window.setInterval
-	(
-		function()
-		{
-			if (i<title.length)
+		<script>
+			function  url()
 			{
-				title.forEach(setOpacity);
-				text.forEach(setOpacity);
-				opacity += 0.05;
+				window.location.href = "index.html";
 			}
-		}, 100
-	);
-	
-	
-			var isShown = false;
-		
-		$( window ).resize(function() 
-	    {
-			window.location.assign("serwis.html");
-		});
-		generate_page();
-		function generate_page()
-		{
-			if (window.innerWidth<800)
-			{
-				if (!document.getElementById("hamburger_menu")) 
-				{
-					var code = 			'<div id="hamburger_btn" class="col-xs-2" onClick="show_mobile_menu()">'+
-							  ' <div class="btn"></div>'+
-						     '  <div class="btn"></div>'+
-							  ' <div class="btn"></div>'+
-												'</div>'+
-				'<div id="headerimg" class="col-xs-10">'+
-'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="100%" width="100%">'+
-												'</div>'+
-							 '<div id="hamburger_menu">'+
-						'<div class="item">Item 1</div>'+
-						'<div class="item">Item 2</div>'+
-						'<div class="item">Item 3</div>'+
-						'<div class="item">Item 4</div>'+
-						'<div class="item">Item 5</div>'+
-						'</div>';
+			var isShown=false;
 			
-				
-					$('header').append(code);
+			function parse()
+			{
+				if (!isShown)
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="visible";
+					}
+				    $('header').addClass('h360');
+					isShown=true;
+				}
+				else
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="hidden";
+						$('header').removeClass('h360');
+						isShown=false;
+					}
 				}
 			}
-			else
-			{
-					var code = 		
-						'<div id="menu">'+
-			'<div id="img" class="col-lg-2">'+
-				'<a href="index.html">'+
-					'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="80" width="100%">'+
-				'</a>'+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-						'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="serwis.html">Serwis</a> '+
-			'</div>'+
-			'<div class="col-lg-2 display-center">'+
-				 '<a href="naprawy.html">Naprawy blacharsko-lakiernicze</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="czesci.html">Części</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				 '<a href="pomoc_drogowa.html">Pomoc drogowa</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="kontakt.html">Kontakt</a> '+
-			'</div></div>';
 				
-					$('header').append(code);	
-			}
-		}
-		
-		function show_mobile_menu()
-		{
-			if (!isShown)
-			{
-				document.getElementById("hamburger_menu").style.visibility="visible";
-				isShown = true;
-			}
-			else
-			{
-				document.getElementById("hamburger_menu").style.visibility="hidden";
-				isShown=false;
-			}
-		}
-}
+			$(document).ready(function() 
+			{ 
+			  $(window).scroll(function() 
+			  {
+				if ($(window).scrollTop() > 50) 
+				{
+					$('header').addClass('header-fixed');
+				}
+				if ($(window).scrollTop() < 50) 
+				{
+					$('header').removeClass('header-fixed');
+				}
+			  });
+			});
 
-core();
-</script>
+			parse();
+			
+   </script>
 		
 		
 	</body>

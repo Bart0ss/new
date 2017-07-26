@@ -19,9 +19,20 @@
     <body>
 <!-- start topnavbar -->
 		<header>
-			
-	
-		</header>>
+			<nav class="nav container-fluid">
+				<ul>
+					<li id="img" onClick="url()"></li>
+					<li class="hidden-md hidden-lg">
+						<button class="hamburger" onClick="parse()"></button>	
+					</li>
+					<li class="menu"><a href="serwis.html">Serwis</a></li>
+					<li class="menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="czesci.html">Części</a></li>
+					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
+					<li class="this menu"><a href="kontakt.html">Kontakt</a></li>
+				</ul>	
+			</nav>
+		</header>
 <!-- end topnavbar -->
 
 <!-- start kontakt -->
@@ -43,43 +54,7 @@
 		</form> 
 		</div>
 	</div>
-<div id="contentBox">
 
- <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
-    <div id="column1" style="float: left; margin:0; width:20px%;">
-		<i class="fa fa-map-marker" aria-hidden="true"></i> 
-		<br>
-	
-		<i class="fa fa-envelope-o" aria-hidden="true"></i>
-		
-		<br>
-		<i class="fa fa-phone" aria-hidden="true"></i>
-		
-		<br>
-		<i class="fa fa-info" aria-hidden="true"></i>
-    </div>
-
-    <div id="column2" style="float: left; padding-left:10em margin:0;width:400px;">
-		ul. Okrężna 3 44-240 Żory
-		<br>
-		
-		euroamiwal@biuro.pl
-		
-		<br>
-		32/ 43 43 493
-		
-		<br><br>
-		Godziny otwarcia:
-		<br>
-poniedziałek:	08:00 - 18:00<br>
-wtorek:			08:00 - 18:00<br>
-środa:			08:00 - 18:00<br>
-czwartek:		08:00 - 18:00<br>
-piątek:			08:00 - 18:00<br>
-sobota:			08:00 - 14:00<br>
-    </div>
-
-</div>
 	
 </div>
 <!-- end kontakt -->
@@ -105,84 +80,55 @@ sobota:			08:00 - 14:00<br>
 		</footer>
 <!-- end footer -->
 	</body>
-	<script>
-			var isShown = false;
-		
-		$( window ).resize(function() 
-	    {
-			window.location.assign("kontakt.html");
-			console.log("rld");
-		});
-		generate_page();
-		function generate_page()
-		{
-			if (window.innerWidth<800)
+			<script>
+			function  url()
 			{
-				if (!document.getElementById("hamburger_menu")) 
-				{
-					var code = 			'<div id="hamburger_btn" class="col-xs-2" onClick="show_mobile_menu()">'+
-							  ' <div class="btn"></div>'+
-						     '  <div class="btn"></div>'+
-							  ' <div class="btn"></div>'+
-												'</div>'+
-				'<div id="headerimg" class="col-xs-10">'+
-'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="100%" width="100%">'+
-												'</div>'+
-							 '<div id="hamburger_menu">'+
-						'<div class="item">Item 1</div>'+
-						'<div class="item">Item 2</div>'+
-						'<div class="item">Item 3</div>'+
-						'<div class="item">Item 4</div>'+
-						'<div class="item">Item 5</div>'+
-						'</div>';
+				window.location.href = "index.html";
+			}
+			var isShown=false;
 			
-				
-					$('header').append(code);
+			function parse()
+			{
+				if (!isShown)
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="visible";
+					}
+				    $('header').addClass('h360');
+					isShown=true;
+				}
+				else
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="hidden";
+						$('header').removeClass('h360');
+						isShown=false;
+					}
 				}
 			}
-			else
-			{
-					var code = 		
-						'<div id="menu">'+
-			'<div id="img" class="col-lg-2">'+
-				'<a href="index.html">'+
-					'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="80" width="100%">'+
-				'</a>'+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-						'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="serwis.html">Serwis</a> '+
-			'</div>'+
-			'<div class="col-lg-2 display-center">'+
-				 '<a href="naprawy.html">Naprawy blacharsko-lakiernicze</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="czesci.html">Części</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				 '<a href="pomoc_drogowa.html">Pomoc drogowa</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="kontakt.html">Kontakt</a> '+
-			'</div></div>';
 				
-					$('header').append(code);	
-			}
-		}
-		
-		function show_mobile_menu()
-		{
-			if (!isShown)
-			{
-				document.getElementById("hamburger_menu").style.visibility="visible";
-				isShown = true;
-			}
-			else
-			{
-				document.getElementById("hamburger_menu").style.visibility="hidden";
-				isShown=false;
-			}
-		}
-	</script>
+			$(document).ready(function() 
+			{ 
+			  $(window).scroll(function() 
+			  {
+				if ($(window).scrollTop() > 50) 
+				{
+					$('header').addClass('header-fixed');
+				}
+				if ($(window).scrollTop() < 50) 
+				{
+					$('header').removeClass('header-fixed');
+				}
+			  });
+			});
+
+				parse();
+			
+	   </script>
 </html>

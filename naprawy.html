@@ -19,34 +19,38 @@
     <body>
 <!-- start topnavbar -->
 		<header>
-			
-		
-			
+			<nav class="nav container-fluid">
+				<ul>
+					<li id="img" onClick="url()"></li>
+					<li class="hidden-md hidden-lg">
+						<button class="hamburger" onClick="parse()"></button>	
+					</li>
+					<li class="menu"><a href="serwis.html">Serwis</a></li>
+					<li class="this menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="czesci.html">Części</a></li>
+					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
+					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
+				</ul>	
+			</nav>
 		</header>
 <!-- end topnavbar -->
 
 <!-- start naprawy -->
-<div id="naprawy">
-
-		<div id="container">
+		<div id="aboutus" class="margintop300">
 			
-			<div class="row">
-				<div class="col-lg-2 bottom"></div>
-					<div id="napis" class="col-lg-3">
-						CZYM SIE ZAJMUJEMY?
-					</div>
-				<div class="col-lg-2 bottom"></div>
+			<div id="entry">
+				<div class="pasek"></div>
+					<div id="napis">Naprawy Blacharsko-lakiernicze</div>
+				<div class="pasek"></div>
 			</div>
-			
-			<div class="row">
-				<div class="col-lg-3">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-				</div>
-				
-				<div id="obrazek" class="col-lg-3"></div>
-			</div>
+		
+		<ul>
+		<li class="img"><img src="images/naprawy.jpg" height="100%" width="100%"></li>	
+		<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus rhoncus viverra. Etiam tincidunt bibendum dapibus. Aliquam gravida tellus nulla, eget lacinia purus tincidunt eu. Mauris tellus sapien, viverra a neque vitae, euismod bibendum enim. Nullam finibus tincidunt ex eu iaculis. Praesent laoreet id quam vel aliquet.</li>
+		</ul>
+		
 		</div>
-</div>
+
 <!-- end naprawy -->
 
 
@@ -65,86 +69,57 @@
 		</footer>
 <!-- end footer -->
 		
-		<script>
-				var isShown = false;
-		
-		$( window ).resize(function() 
-	    {
-			window.location.assign("naprawy.html");
-		});
-		generate_page();
-		function generate_page()
-		{
-			if (window.innerWidth<800)
+			<script>
+			function  url()
 			{
-				if (!document.getElementById("hamburger_menu")) 
-				{
-					var code = 			'<div id="hamburger_btn" class="col-xs-2" onClick="show_mobile_menu()">'+
-							  ' <div class="btn"></div>'+
-						     '  <div class="btn"></div>'+
-							  ' <div class="btn"></div>'+
-												'</div>'+
-				'<div id="headerimg" class="col-xs-10">'+
-'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="100%" width="100%">'+
-												'</div>'+
-							 '<div id="hamburger_menu">'+
-						'<div class="item">Item 1</div>'+
-						'<div class="item">Item 2</div>'+
-						'<div class="item">Item 3</div>'+
-						'<div class="item">Item 4</div>'+
-						'<div class="item">Item 5</div>'+
-						'</div>';
+				window.location.href = "index.html";
+			}
+			var isShown=false;
 			
-				
-					$('header').append(code);
+			function parse()
+			{
+				if (!isShown)
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="visible";
+					}
+				    $('header').addClass('h360');
+					isShown=true;
+				}
+				else
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="hidden";
+						$('header').removeClass('h360');
+						isShown=false;
+					}
 				}
 			}
-			else
-			{
-					var code = 		
-						'<div id="menu">'+
-			'<div id="img" class="col-lg-2">'+
-				'<a href="index.html">'+
-					'<img src="svg_files/logo_euro_amiwal.svg" alt="Logo" height="80" width="100%">'+
-				'</a>'+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-						'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="serwis.html">Serwis</a> '+
-			'</div>'+
-			'<div class="col-lg-2 display-center">'+
-				 '<a href="naprawy.html">Naprawy blacharsko-lakiernicze</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="czesci.html">Części</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				 '<a href="pomoc_drogowa.html">Pomoc drogowa</a> '+
-			'</div>'+
-			'<div class="col-lg-1 display-center">'+
-				' <a href="kontakt.html">Kontakt</a> '+
-			'</div></div>';
+			parse();
 				
-					$('header').append(code);	
-			}
-		}
+			$(document).ready(function() 
+			{ 
+			  $(window).scroll(function() 
+			  {
+				if ($(window).scrollTop() > 50) 
+				{
+					$('header').addClass('header-fixed');
+				}
+				if ($(window).scrollTop() < 50) 
+				{
+					$('header').removeClass('header-fixed');
+				}
+			  });
+			});
+
 		
-		function show_mobile_menu()
-		{
-			if (!isShown)
-			{
-				document.getElementById("hamburger_menu").style.visibility="visible";
-				isShown = true;
-			}
-			else
-			{
-				document.getElementById("hamburger_menu").style.visibility="hidden";
-				isShown=false;
-			}
-		}
-		
-		
-		</script>
+			
+	   </script>
 	</body>
 </html>

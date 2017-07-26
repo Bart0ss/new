@@ -12,16 +12,20 @@
 		
 		height: 100px;
 		text-align: center;
+		
 		.nav
 		{					
 			margin-top: 10px;
 			display: flex;
 			justify-content: center;
-			
+						
 			.menu
 			{
 				width: 100%;
+				visibility: hidden;
 			}
+			
+			
 			#img
 			{
 				height: 75px;
@@ -34,13 +38,14 @@
 
 			ul
 			{
+
 				width: 100%;
 				display: flex;
 				flex-direction: column;
 				list-style: none;
 			}		
 
-			li
+			li:not(:first-child)
 			{		
 				text-align: center;
 				a
@@ -61,7 +66,6 @@
 			}			
 
 		}
-		
 
 		.hamburger 
 		{
@@ -118,7 +122,6 @@
 	
 	.header-fixed
 	{
-		
 		background-color: white;;
 		z-index: 100;
 		position: fixed;
@@ -133,7 +136,7 @@
 			width: 110%;
 			li
 			{
-				background-color: white;;
+				background-color: white;
 			}
 		}
 	}
@@ -225,6 +228,8 @@
 	}
 	#aboutus
 	{
+		
+		margin-top: 30px;
 		background-color:  rgb(244, 248, 249);
 		padding-top: 15px;
 		margin-left: auto;
@@ -267,7 +272,8 @@
 			{
 				margin-left: auto;
 				margin-right: auto;
-				width: 450px;
+				padding-right: 30px;
+				width: 400px;
 				height: 400px;
 			}
 			.text
@@ -317,37 +323,7 @@
 		}
 	}
 	
-	#marki
-	{
-		height: 800px;
-		padding-top: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		
-		#napis
-		{
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Source Sans Pro', sans-serif;
-			border-bottom-width: 3px;
-			border-bottom-color: black;
-			border-bottom-style: solid;
-		}
-		#entry
-		{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
-		.pasek
-		{
-			margin-top: 40px;
-			width: 30%;
-			border-bottom-style: solid;
-			border-bottom-width: 2px;
-			border-bottom-color: lightgray;	
-		}
-	}
+
 	
 	#marki
 	{
@@ -432,6 +408,95 @@
 		#napis6
 		{
 			visibility: hidden;
+		}
+		
+		
+	}
+	
+	#serwis
+	{
+		margin-top: 50px;
+				
+		#napis
+		{
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Source Sans Pro', sans-serif;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		#entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+	}
+	
+	#czesci
+	{
+		margin-top: 50px;
+				
+		#napis
+		{
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Source Sans Pro', sans-serif;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		#entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+	}
+	
+	#naprawy
+	{
+		margin-top: 50px;
+				
+		#napis
+		{
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Source Sans Pro', sans-serif;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		#entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
 		}
 	}
 }
