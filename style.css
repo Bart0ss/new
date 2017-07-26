@@ -341,8 +341,6 @@
   #services {
     height: 620px;
     padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto; }
     #services #napis {
@@ -363,8 +361,6 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #services ul {
-      padding-left: 0px;
-      padding-right: 30px;
       padding-top: 25px;
       display: flex;
       flex-direction: column;
@@ -407,8 +403,6 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #aboutus ul {
-      padding-left: 50px;
-      padding-right: 30px;
       padding-top: 25px;
       display: flex;
       flex-direction: column;
@@ -416,11 +410,13 @@
       align-items: center;
       list-style: none; }
       #aboutus ul .img {
-        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
         height: 400px; }
       #aboutus ul .text {
         margin-top: 20px;
-        height: 400px;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
