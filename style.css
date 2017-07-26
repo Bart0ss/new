@@ -269,7 +269,7 @@
       display: flex;
       justify-content: center; }
       header .nav .menu {
-        visibility: hidden; }
+        width: 100%; }
       header .nav #img {
         height: 75px;
         width: 200px;
@@ -278,6 +278,7 @@
         background-image: url(svg_files/logo_euro_amiwal.svg);
         background-repeat: no-repeat; }
       header .nav ul {
+        width: 100%;
         display: flex;
         flex-direction: column;
         list-style: none; }
@@ -320,6 +321,12 @@
       border: none; }
     header .hamburger:focus::after {
       transform: rotate(-90deg) translateX(-10px); }
+
+  .h500 {
+    position: relative;
+    right: 38px;
+    height: 360px;
+    width: 110%; }
 
   #slider {
     margin-top: 25px;

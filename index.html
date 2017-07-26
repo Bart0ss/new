@@ -29,41 +29,12 @@
 					<li class="menu"><a href="#">Części</a></li>
 					<li class="menu"><a href="#">Pomoc drogowa</a></li>
 					<li class="menu"><a href="#">Kontakt</a></li>
-					
-		<script>
-			
-			var isShown=false;
-			
-			function parse()
-			{
-				if (!isShown)
-				{
-					var cusid_ele = document.getElementsByClassName('menu');
-					for (var i = 0; i < cusid_ele.length; ++i) 
-					{
-						var item = cusid_ele[i];  
-						item.style.visibility="visible";
-					}
-					isShown=true;
-				}
-				else
-				{
-					var cusid_ele = document.getElementsByClassName('menu');
-					for (var i = 0; i < cusid_ele.length; ++i) 
-					{
-						var item = cusid_ele[i];  
-						item.style.visibility="hidden";
-						isShown=false;
-					}
-				}
-			}
-			
-	   </script>
-				
-					
-				</ul>
+				</ul>	
 			</nav>
 		</header>
+		
+		<script>
+		</script>
 <!-- end header -->
 
 <!-- start slider -->
@@ -143,7 +114,6 @@
 		
 
 			<div id="znaczki">
-			
 					<img class="img" src="marki/ford.png"  alt="ford">
 					<img class="img" src="marki/mazda.png" alt="mazda">
 
@@ -183,7 +153,37 @@
 			
 		</footer>
 <!-- end footer -->
-		
+			<script>
+			
+			var isShown=false;
+			
+			function parse()
+			{
+				if (!isShown)
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="visible";
+					}
+				    $('header').addClass('h360');
+					isShown=true;
+				}
+				else
+				{
+					var cusid_ele = document.getElementsByClassName('menu');
+					for (var i = 0; i < cusid_ele.length; ++i) 
+					{
+						var item = cusid_ele[i];  
+						item.style.visibility="hidden";
+						$('header').removeClass('h360');
+						isShown=false;
+					}
+				}
+			}
+			
+	   </script>
 
 	</body>
 
