@@ -20,6 +20,7 @@
 						
 			.menu
 			{
+				z-index: 100;
 				width: 100%;
 				visibility: hidden;
 			}
@@ -37,7 +38,6 @@
 
 			ul
 			{
-
 				width: 100%;
 				display: flex;
 				flex-direction: column;
@@ -109,6 +109,10 @@
 		}
 	}
 	
+	.fixedul
+	{
+
+	}
 	.h360
 	{
 		ul
@@ -116,12 +120,12 @@
 			width: 100%;
 		}
 		margin-left: auto;
-		height: 400px;
+		height: 100px;
 	}
 	
 	.header-fixed
 	{
-		background-color: white;;
+		background-color: white;
 		z-index: 100;
 		position: fixed;
 		left: 25%;
@@ -322,11 +326,10 @@
 		}
 	}
 	
-
 	
 	#marki
 	{
-		height: 800px;
+		height: 600px;
 		padding-top: 15px;
 		margin-left: auto;
 		margin-right: auto;
@@ -354,19 +357,42 @@
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
 		}
+		
 		#znaczki
 		{
+			.hidden-sm, .hidden-xs
+			{
+				visibility: hidden;
+				background-color: red;
+			}
+
+			row
+			{
+				background-color: red;
+			}
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 15px;
 			
-			display: block;
-			margin-top: 30px;
 			.img
 			{
-
-				width: 30px;
-				height: 30px;
+				margin-top: 10px;
+				opacity: 0.3;
+				width: 100px;
+				height: 100px;
 			}
-		}
-	}
+			.img:nth-child(2)
+			{
+				margin-left: 50px;
+			}
+			.img:hover
+			{
+				opacity: 1;
+			}
+		
+		}}
 	
 	footer
 	{
@@ -411,36 +437,7 @@
 		
 		
 	}
-	
-	#serwis
-	{
-		margin-top: 50px;
-				
-		#napis
-		{
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Source Sans Pro', sans-serif;
-			border-bottom-width: 3px;
-			border-bottom-color: black;
-			border-bottom-style: solid;
-		}
-		#entry
-		{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
-		.pasek
-		{
-			margin-top: 40px;
-			width: 30%;
-			border-bottom-style: solid;
-			border-bottom-width: 2px;
-			border-bottom-color: lightgray;	
-		}
-	}
-	
+
 	#czesci
 	{
 		margin-top: 50px;
@@ -501,9 +498,14 @@
 	
 	#serwis
 	{
-		height: 800px;
+		height: 900px;
 		margin-top: 30px;
-				
+			
+		#pc
+		{
+			height: 1px;
+			visibility: hidden;
+		}
 		#napis
 		{
 			text-align: center;

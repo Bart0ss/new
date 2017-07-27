@@ -153,9 +153,10 @@
       border-bottom-color: lightgray; }
 
   #marki {
-    padding-top: 15px;
+    margin-top: 25px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    height: 220px; }
     #marki #napis {
       text-align: center;
       font-size: 25px;
@@ -174,7 +175,18 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #marki #znaczki {
-      margin-top: 15px; }
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center; }
+      #marki #znaczki img {
+        margin-left: 30px;
+        opacity: 0.3;
+        height: 100px;
+        width: 100px; }
+      #marki #znaczki img:hover {
+        opacity: 1; }
 
   #aboutus {
     background-color: #f4f8f9;
@@ -276,8 +288,10 @@
       font-weight: bold; }
 
   #serwis {
-    height: 500px;
-    margin-top: 15px; }
+    background-color: #f4f8f9; }
+    #serwis #mobile {
+      height: 1px;
+      visibility: hidden; }
     #serwis #napis {
       text-align: center;
       font-size: 25px;
@@ -295,8 +309,20 @@
       border-bottom-style: solid;
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
-    #serwis ul li {
-      list-style: none; } }
+    #serwis #pc {
+      margin-left: 50px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      #serwis #pc ul {
+        list-style: none; }
+      #serwis #pc .row {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between; }
+        #serwis #pc .row .napis {
+          width: 600px; } }
 @media screen and (max-width: 768px) {
   body {
     max-width: 100%;
@@ -310,6 +336,7 @@
       display: flex;
       justify-content: center; }
       header .nav .menu {
+        z-index: 100;
         width: 100%;
         visibility: hidden; }
       header .nav #img {
@@ -366,7 +393,7 @@
 
   .h360 {
     margin-left: auto;
-    height: 400px; }
+    height: 100px; }
     .h360 ul {
       width: 100%; }
 
@@ -511,7 +538,7 @@
       font-family: 'Source Sans Pro', sans-serif; }
 
   #marki {
-    height: 800px;
+    height: 600px;
     padding-top: 15px;
     margin-left: auto;
     margin-right: auto; }
@@ -533,11 +560,25 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #marki #znaczki {
-      display: block;
-      margin-top: 30px; }
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px; }
+      #marki #znaczki .hidden-sm, #marki #znaczki .hidden-xs {
+        visibility: hidden;
+        background-color: red; }
+      #marki #znaczki row {
+        background-color: red; }
       #marki #znaczki .img {
-        width: 30px;
-        height: 30px; }
+        margin-top: 10px;
+        opacity: 0.3;
+        width: 100px;
+        height: 100px; }
+      #marki #znaczki .img:nth-child(2) {
+        margin-left: 50px; }
+      #marki #znaczki .img:hover {
+        opacity: 1; }
 
   footer {
     height: 700px;
@@ -565,26 +606,6 @@
       font-weight: bold; }
     footer #napis6 {
       visibility: hidden; }
-
-  #serwis {
-    margin-top: 50px; }
-    #serwis #napis {
-      text-align: center;
-      font-size: 25px;
-      font-family: 'Source Sans Pro', sans-serif;
-      border-bottom-width: 3px;
-      border-bottom-color: black;
-      border-bottom-style: solid; }
-    #serwis #entry {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    #serwis .pasek {
-      margin-top: 40px;
-      width: 30%;
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
-      border-bottom-color: lightgray; }
 
   #czesci {
     margin-top: 50px; }
@@ -627,8 +648,11 @@
       border-bottom-color: lightgray; }
 
   #serwis {
-    height: 800px;
+    height: 900px;
     margin-top: 30px; }
+    #serwis #pc {
+      height: 1px;
+      visibility: hidden; }
     #serwis #napis {
       text-align: center;
       font-size: 25px;

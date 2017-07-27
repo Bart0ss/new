@@ -44,6 +44,8 @@
 			<div class="pasek"></div>
 		</div>
 		
+		
+	<div id="mobile">
 		<ul>
 		<li id="napis1"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
@@ -62,13 +64,35 @@
 			
 		<li id="napis6"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
-
-			
-
-			
 		</ul>
-			
 	</div>
+			
+			
+	<div id="pc">
+
+		<div class="row">
+			<div id="napis1" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+			
+			<div id="napis2" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+		</div>	
+		
+		<div class="row">
+			<div id="napis3" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+			
+			<div id="napis4" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+		</div>	
+		
+		<div class="row">
+			<div id="napis5" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+			
+			<div id="napis6" class="napis"><i class="fa fa-check-circle-o" aria-hidden="true"></i><b>&nbsp; MECHANIKA POJAZDOWA</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel est et lacus tincidunt sodales. Maecenas lacus nunc, lobortis sit amet dolor semper, gravida aliquam quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+		</div>	
+
+
+
+		
+
+</div>
 <!-- end serwis -->
 
 
@@ -104,7 +128,7 @@
 			(
 				function()
 				{
-					if (i<text.length)
+					if (i<text.length && opacity<=1)
 					{
 						text.forEach(setOpacity);
 						opacity += 0.05;
@@ -157,14 +181,14 @@
 			}
 				
 			$(document).ready(function() 
-			{ 
+			{ 	
 			  $(window).scroll(function() 
-			  {
-				if ($(window).scrollTop() > 250) 
+			  {			  console.log($(window).scrollTop());
+				if ($(window).scrollTop() > 50) 
 				{
 					$('header').addClass('header-fixed');
 				}
-				if ($(window).scrollTop() < 250) 
+				if ($(window).scrollTop() < 50) 
 				{
 					$('header').removeClass('header-fixed');
 				}

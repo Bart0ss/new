@@ -21,7 +21,7 @@
 			<nav class="nav container-fluid">
 				<ul>
 					<li id="img" onClick="url()"></li>
-					<li class="hidden-md hidden-lg">
+					<li class="hidden-md hidden-lg hidden-xl">
 						<button class="hamburger" onClick="parse()"></button>	
 					</li>
 					<li class="menu"><a href="serwis.html">Serwis</a></li>
@@ -59,19 +59,19 @@
 		<ul>
 			<li class="img item"><img src="svg_files/serwis.svg" height="100%" width="100%"></li>
 			
-				<li class="text item">SERWIS</li>
+			<li class="text item">SERWIS</li>
 			
 			<li class="img item"><img src="svg_files/czesci.svg" height="100%" width="100%"></li>
 			
-				<li class="text item">CZĘŚCI ORYGINALNE I ZAMIENNIKI</li>
+			<li class="text item">CZĘŚCI ORYGINALNE I ZAMIENNIKI</li>
 			
 			<li class="img item"><img src="svg_files/naprawy.svg" height="100%" width="100%"></li>
 			
-				<li class="text item">NAPRAWY BLACHARSKO-LAKIERNICZE</li>
+			<li class="text item">NAPRAWY BLACHARSKO-LAKIERNICZE</li>
 			
 			<li class="img item"><img src="svg_files/pomoc_drogowa.svg" height="100%" width="100%"></li>
 			
-				<li class="text item">POMOC DROGOWA</li>
+			<li class="text item">POMOC DROGOWA</li>
 		
 
 	
@@ -114,21 +114,42 @@
 		
 
 			<div id="znaczki">
-					<img class="img" src="marki/ford.png"  alt="ford">
-					<img class="img" src="marki/mazda.png" alt="mazda">
-
+				<div class="hidden-md hidden-lg">
+					<div class="row">
+						<img class="img" src="marki/ford.png"  width="100%" height="100%" alt="ford">
+						<img class="img" src="marki/mazda.png" width="100%" height="100%" alt="mazda">
+					</div>
+				
+					<div class="row">
+						<img class="img" src="marki/sberski.png" width="100%" height="100%" alt="sberski">
+						<img class="img" src="marki/skoda.png" width="100%" height="100%" alt="skoda">
+					</div>
 					
-					<img class="img" src="marki/sberski.png" alt="sberski">
-					<img class="img" src="marki/skoda.png" alt="skoda">
+					<div class="row">
+						<img class="img" src="marki/renault.png" width="100%" height="100%" alt="renault">
+						<img class="img" src="marki/bmw.png" width="100%" height="100%" alt="bmw">
+					</div>
+				
+					<div class="row">
+						<img class="img" src="marki/peugeot.png" width="100%" height="100%" alt="peugeot">
+						<img class="img" src="marki/toyota.png" width="100%" height="100%" alt="toyota">
+					</div>
+					
+				</div>
+				<div class="hidden-sm hidden-xs">
+						<img class="img" src="marki/ford.png"  width="100%" height="100%" alt="ford">
+						<img class="img" src="marki/mazda.png" width="100%" height="100%" alt="mazda">
 
-
-					<img class="img" src="marki/renault.png" alt="renault">
-					<img class="img" src="marki/bmw.png" alt="bmw">
-
-
-					<img class="img" src="marki/peugeot.png" alt="peugeot">
-					<img class="img" src="marki/toyota.png" alt="toyota">
-			</div>
+						<img class="img" src="marki/sberski.png" width="100%" height="100%" alt="sberski">
+						<img class="img" src="marki/skoda.png" width="100%" height="100%" alt="skoda">
+					
+						<img class="img" src="marki/renault.png" width="100%" height="100%" alt="renault">
+						<img class="img" src="marki/bmw.png" width="100%" height="100%" alt="bmw">
+				
+						<img class="img" src="marki/peugeot.png" width="100%" height="100%" alt="peugeot">
+						<img class="img" src="marki/toyota.png" width="100%" height="100%" alt="toyota">
+				</div>
+		</div>
 			
 		</div>
 <!-- end marki -->
@@ -159,6 +180,7 @@
 				window.location.href = "index.html";
 			}
 			var isShown;
+				
 			if($( window ).width() >= 769)
 			{
 				isShown=false;
@@ -188,6 +210,7 @@
 					{
 						var item = cusid_ele[i];  
 						item.style.visibility="hidden";
+						
 						$('header').removeClass('h360');
 						isShown=false;
 					}
@@ -198,11 +221,11 @@
 			{ 
 			  $(window).scroll(function() 
 			  {
-				if ($(window).scrollTop() > 50) 
+				if ($(window).scrollTop() > 30) 
 				{
 					$('header').addClass('header-fixed');
 				}
-				if ($(window).scrollTop() < 50) 
+				if ($(window).scrollTop() < 30) 
 				{
 					$('header').removeClass('header-fixed');
 				}

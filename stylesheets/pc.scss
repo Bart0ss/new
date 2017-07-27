@@ -252,10 +252,10 @@
 	#marki
 	{
 		
-		padding-top: 15px;
+		margin-top: 25px;
 		margin-left: auto;
 		margin-right: auto;
-		
+		height: 220px;
 		#napis
 		{
 			text-align: center;
@@ -282,7 +282,23 @@
 		
 		#znaczki
 		{
-			margin-top: 15px;
+				margin-top: 35px;
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				img
+				{
+					margin-left: 30px;
+					opacity: 0.3;
+					height: 100px;
+					width: 100px;
+				}
+				img:hover
+				{
+					opacity: 1;
+				}
+
 		}
 	}
 	
@@ -381,9 +397,6 @@
 		}
 	}
 	
-	
-	
-	
 	footer
 	{
 		height: 765px;
@@ -432,9 +445,12 @@
 	
 	#serwis
 	{
-		height: 500px;
-		margin-top: 15px;
-				
+		background-color:  rgb(244, 248, 249);
+		#mobile
+		{
+			height: 1px;
+			visibility: hidden;
+		}
 		#napis
 		{
 			text-align: center;
@@ -459,11 +475,26 @@
 			border-bottom-color: lightgray;	
 		}
 		
-		ul
+		#pc
 		{
-			li
+			margin-left: 50px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			ul
 			{
 				list-style: none;
+			}
+			.row
+			{
+				margin-top: 15px;
+				display: flex;
+				justify-content: space-between;
+				.napis
+				{
+					width: 600px;
+				}
 			}
 		}
 
