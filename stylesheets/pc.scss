@@ -123,7 +123,7 @@
 	
 	#services
 	{
-		height: 250px;
+		height: 300px;
 		padding-top: 15px;
 		padding-left: 15px;
 		padding-right: 15px;
@@ -135,102 +135,6 @@
 			border-bottom-width: 3px;
 			border-bottom-color: black;
 			border-bottom-style: solid;
-		}
-
-		ul
-		{
-			padding-top: 15px;
-			display: flex;
-
-			flex-wrap: wrap;
-			justify-content: space-between;
-			list-style: none;
-			a
-			{
-				text-decoration: none;
-			}
-			.img
-			{
-				width: 100px;
-				height: 100px;
-			}
-			
-			.item
-			{
-			}
-			.item:first-child
-			{
-				width: 25%;
-				order: 1;
-			}
-			
-			.item:nth-child(2)
-			{
-				
-				order: 5;
-			}
-			
-			.item:nth-child(3)
-			{	width: 25%;
-				order: 2;
-			}
-			
-			.item:nth-child(4)
-			{
-				order: 6;
-			}
-			
-			.item:nth-child(5)
-			{	width: 25%;
-				order: 3;
-			}
-			
-			.item:nth-child(6)
-			{
-				order: 7;
-			}
-						
-			.item:nth-child(7)
-			{	width: 25%;
-				flex-wrap: wrap;
-				align-content: space-between;
-				order: 4;
-			}
-						
-			.item:nth-child(8)
-			{
-				order: 8;
-			}
-			
-			.text
-			{
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: center;
-				margin-top: 20px;
-				
-				font-size: 18px;
-				font-weight: bold;
-				font-family: 'Source Sans Pro', sans-serif;
-				height: 50px;
-			}
-			.text:nth-child(2)
-			{
-				width: 60px;
-			}		
-			.text:nth-child(4)
-			{
-				width: 250px;
-			}
-			.text:nth-child(6)
-			{
-				width: 200px;
-			}
-			.text:last-child
-			{
-				width: 100px;
-			}
 		}
 
 		#entry
@@ -246,6 +150,65 @@
 			border-bottom-style: solid;
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
+		}
+		
+		#pc
+		{
+			margin-top: 15px;
+			.img
+			{	
+				width: 100px;
+				height: 100px;
+			}
+			.text
+			{
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				font-size: 25px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-weight: bold;
+			}
+			.text:first-child
+			{
+				position: relative;
+				left: 1%;
+				padding-top: 20px;
+			}
+			.text:nth-child(2)
+			{
+				position: relative;
+				left: 1.5%;
+			}
+			
+			.text:nth-child(3)
+			{
+				position: relative;
+				right: 1%;
+			}
+			
+			.text:nth-child(4)
+			{
+				position: relative;
+				right: 2%;
+			}
+			
+			.lg
+			{
+				width: 200px;
+			}
+			ul
+			{
+				display: flex;
+				justify-content: space-around;
+				list-style: none;
+			}
+		}
+		
+		#mobile
+		{
+			height: 1px;
+			visibility: hidden;
 		}
 	}
 	

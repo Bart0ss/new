@@ -25,7 +25,6 @@
 				visibility: hidden;
 			}
 			
-			
 			#img
 			{
 				height: 75px;
@@ -109,10 +108,6 @@
 		}
 	}
 	
-	.fixedul
-	{
-
-	}
 	.h360
 	{
 		ul
@@ -144,7 +139,6 @@
 		}
 	}
 
-	
 	#slider
 	{
 		margin-top: 25px;
@@ -154,6 +148,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
 		.col-lg-4
 		{
 			h2
@@ -173,6 +168,7 @@
 	{
 		height: 620px;
 		padding-top: 15px;
+		
 		#napis
 		{
 			text-align: center;
@@ -197,8 +193,13 @@
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
 		}
-			margin-left: auto;
-			margin-right: auto;
+		
+		#pc
+		{
+			height: 1px;
+			visibility: hidden;
+		}
+
 		ul
 		{
 			padding-top: 25px;
@@ -212,13 +213,17 @@
 			}
 			.img
 			{
+				position: relative;
+				right: 5%;
 				margin-left: auto;
 				margin-right: auto;
 				width: 60px;
 				height: 60px;
 			}
 			.text
-			{
+			{		
+				position: relative;
+				right: 5%;
 				margin-top: 20px;
 				text-align: center;
 				font-size: 18px;
@@ -226,12 +231,11 @@
 				font-family: 'Source Sans Pro', sans-serif;
 				height: 50px;
 			}
-
 		}
 	}
+	
 	#aboutus
 	{
-		
 		margin-top: 30px;
 		background-color:  rgb(244, 248, 249);
 		padding-top: 15px;
@@ -325,8 +329,7 @@
 				font-family: 'Source Sans Pro', sans-serif;
 		}
 	}
-	
-	
+
 	#marki
 	{
 		height: 600px;
@@ -433,9 +436,7 @@
 		#napis6
 		{
 			visibility: hidden;
-		}
-		
-		
+		}	
 	}
 
 	#czesci
