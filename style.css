@@ -7,11 +7,8 @@
     overflow-x: hidden; }
 
   header {
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: lightgray;
-    margin-top: 30px;
-    height: 100px; }
+    margin-top: 20px;
+    height: 75px; }
     header .nav {
       text-align: center;
       display: flex;
@@ -61,6 +58,12 @@
           padding-top: 20px;
           color: #1a8ee5;
           font-weight: bold; }
+
+  .borderbot {
+    height: 100px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray; }
 
   #slider {
     margin-top: 25px;
@@ -172,8 +175,7 @@
         opacity: 1; }
 
   #aboutus {
-    background-color: #f4f8f9;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto; }
     #aboutus #napis {
@@ -194,9 +196,9 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #aboutus ul {
+      margin-top: 50px;
       padding-left: 50px;
       padding-right: 30px;
-      padding-top: 25px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -271,7 +273,8 @@
       font-weight: bold; }
 
   #serwis {
-    background-color: #f4f8f9; }
+    margin-top: 30px;
+    height: 500px; }
     #serwis #mobile {
       height: 1px;
       visibility: hidden; }
@@ -293,6 +296,7 @@
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
     #serwis #pc {
+      margin-top: 30px;
       margin-left: 50px;
       margin-bottom: 15px;
       display: flex;

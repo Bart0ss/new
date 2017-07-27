@@ -12,11 +12,8 @@
 
 	header
 	{
-		border-bottom-width: 3px;
-		border-bottom-style: solid;
-		border-bottom-color: lightgray;
-		margin-top: 30px;
-		height: 100px;
+		margin-top: 20px;
+		height: 75px;
 		.nav
 		{					
 			text-align: center;
@@ -96,6 +93,14 @@
 				}
 			}
 		}
+	}
+	
+	.borderbot
+	{
+		height: 100px;
+		border-bottom-width: 3px;
+		border-bottom-style: solid;
+		border-bottom-color: lightgray;
 	}
 	
 	#slider
@@ -267,8 +272,7 @@
 	
 	#aboutus
 	{
-		background-color:  rgb(244, 248, 249);
-		margin-top: 15px;
+		margin-top: 30px;
 		margin-left: auto;
 		margin-right: auto;
 		
@@ -297,9 +301,9 @@
 		}
 		ul
 		{
+			margin-top: 50px;
 			padding-left: 50px;
 			padding-right: 30px;
-			padding-top: 25px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -408,7 +412,8 @@
 	
 	#serwis
 	{
-		background-color:  rgb(244, 248, 249);
+		margin-top: 30px;
+		height: 500px;
 		#mobile
 		{
 			height: 1px;
@@ -440,6 +445,7 @@
 		
 		#pc
 		{
+			margin-top: 30px;
 			margin-left: 50px;
 			margin-bottom: 15px;
 			display: flex;
@@ -460,6 +466,5 @@
 				}
 			}
 		}
-
 	}
 }	
