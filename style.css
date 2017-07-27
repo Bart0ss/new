@@ -314,6 +314,9 @@
   #pomoc {
     height: 700px;
     margin-top: 30px; }
+    #pomoc #mobile {
+      height: 1px;
+      visibility: hidden; }
     #pomoc #napis {
       text-align: center;
       font-size: 25px;

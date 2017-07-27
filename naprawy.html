@@ -46,7 +46,7 @@
 		
 		<ul>
 		<li class="img"><img src="images/naprawy.jpg" height="100%" width="100%"></li>	
-		<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus rhoncus viverra. Etiam tincidunt bibendum dapibus. Aliquam gravida tellus nulla, eget lacinia purus tincidunt eu. Mauris tellus sapien, viverra a neque vitae, euismod bibendum enim. Nullam finibus tincidunt ex eu iaculis. Praesent laoreet id quam vel aliquet.</li>
+		<li id="opacity_text" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus rhoncus viverra. Etiam tincidunt bibendum dapibus. Aliquam gravida tellus nulla, eget lacinia purus tincidunt eu. Mauris tellus sapien, viverra a neque vitae, euismod bibendum enim. Nullam finibus tincidunt ex eu iaculis. Praesent laoreet id quam vel aliquet.</li>
 		</ul>
 		
 		</div>
@@ -70,6 +70,34 @@
 <!-- end footer -->
 		
 			<script>
+				
+		var i = 0;
+		var text = ["opacity_text"];
+		var opacity = 0;
+
+		function setOpacity(item)
+		{
+			document.getElementById(item).style.opacity=opacity;
+		}
+
+		function core()
+		{		
+			window.setInterval
+			(
+				function()
+				{
+					if (i<text.length && opacity<=1)
+					{
+						text.forEach(setOpacity);
+						opacity += 0.05;
+					}
+				}, 100
+			);
+		}
+
+		core();
+				
+				
 			function  url()
 			{
 				window.location.href = "index.html";

@@ -45,7 +45,7 @@
 
 	<div id="pc">
 		<div class="row">
-			<div class="text">
+			<div id="text1" class="text">
 				<b>W RAZIE WYPADKU PAMIĘTAJ O:</b><br>
 					- ustaleniu sprawcy wypadku,<br>
 					- zadbaniu o świadka zdarzenia,<br>
@@ -65,7 +65,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="text">
+			<div id="text2" class="text">
 				<b>W OŚWIADCZENIU POWINNY ZNALEŹĆSIĘNASTĘPUJĄCE INFORMACJE:</b><br>
 						- nr polisy OC sprawcy i nazwa firmy ubezpieczeniowej,	<br>
 						- nazwisko i imię sprawcy, adres, pesel, nr telefonu,	<br>
@@ -99,7 +99,7 @@
 				<br>
 			</div>
 		</div>
-		<div class="text">
+		<div id="text3" class="text">
 			<b>W RAZIE WYPADKU PAMIĘTAJ O:</b><br>
 				- ustaleniu sprawcy wypadku,<br>
 				- zadbaniu o świadka zdarzenia,<br>
@@ -149,7 +149,44 @@
 <!-- end footer -->
 	</body>
 	
-			<script>
+			<script>							
+		var i = 0;
+		var text;
+				
+		if($( window ).width() >= 769)
+		{
+			text = ["text1","text2"];
+		}
+		else
+		{
+			text = ["text3"];
+		}
+				
+				
+		var opacity = 0;
+
+		function setOpacity(item)
+		{
+			document.getElementById(item).style.opacity=opacity;
+		}
+
+		function core()
+		{		
+			window.setInterval
+			(
+				function()
+				{
+					if (i<text.length && opacity<=1)
+					{
+						text.forEach(setOpacity);
+						opacity += 0.05;
+					}
+				}, 100
+			);
+		}
+
+		core();
+				
 			function  url()
 			{
 				window.location.href = "index.html";
