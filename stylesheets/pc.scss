@@ -467,4 +467,102 @@
 			}
 		}
 	}
+	
+	#pomoc
+	
+	{
+		height: 700px;
+		margin-top: 30px;
+		#napis
+		{
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Source Sans Pro', sans-serif;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		#entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+		
+		#pc
+		{	
+			margin-top: 30px;
+			margin-left: 50px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			
+			#napis2
+			{
+				text-align: center;
+				height: 200px;
+				width: 500px;
+				font-size: 25px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-weight: bold;
+				background-color: #212946;
+				color: white;
+				display: flex;
+				
+				#charbox
+				{		
+					text-align: center;
+					width: 60px;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				#text
+				{
+					margin: auto;
+				}
+			}
+			
+			figure
+			{
+				img
+				{
+					background-repeat: no-repeat;
+				}
+			}
+			ul
+			{
+				list-style: none;
+			}
+			.row
+			{
+				margin-top: 15px;
+				display: flex;
+				justify-content: space-around;
+				.text
+				{
+					width: 500px;
+				}
+			}
+			
+			.row:nth-child(2)
+			{
+				.text
+				{
+
+					height: 200px;
+				}
+			}
+		}
+	}
 }	
