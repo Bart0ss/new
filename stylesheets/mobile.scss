@@ -441,7 +441,7 @@
 
 	#czesci
 	{
-		margin-top: 50px;
+		margin-top: 40px;
 				
 		#napis
 		{
@@ -470,7 +470,7 @@
 	
 	#naprawy
 	{
-		margin-top: 50px;
+		margin-top: 40px;
 				
 		#napis
 		{
@@ -500,7 +500,7 @@
 	#serwis
 	{
 		height: 1000px;
-		margin-top: 30px;
+		margin-top: 40px;
 			
 		#pc
 		{
@@ -543,11 +543,10 @@
 		}
 	}
 	
-	
 	#pomoc
 	{
 		height: 1000px;
-		margin-top: 30px;
+		margin-top: 40px;
 			
 		#pc
 		{
@@ -576,6 +575,43 @@
 			border-bottom-style: solid;
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
+		}
+		
+		#mobile
+		{
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			.text
+			{
+				margin-top: 15px;
+			}
+			#textbox
+			{
+				margin-top: 30px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				
+				height: 100px;
+				background-color: #212946;
+				color: white;
+				font-size: 25px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-weight: bold;
+				#charbox
+				{
+					display: flex;
+					align-items: center;
+					height: 100%;
+					width: 20px;
+				}
+			}
+			figure
+			{
+				margin-top: 40px;
+			}
 		}
 	}
 }

@@ -659,7 +659,7 @@
       visibility: hidden; }
 
   #czesci {
-    margin-top: 50px; }
+    margin-top: 40px; }
     #czesci #napis {
       text-align: center;
       font-size: 25px;
@@ -679,7 +679,7 @@
       border-bottom-color: lightgray; }
 
   #naprawy {
-    margin-top: 50px; }
+    margin-top: 40px; }
     #naprawy #napis {
       text-align: center;
       font-size: 25px;
@@ -700,7 +700,7 @@
 
   #serwis {
     height: 1000px;
-    margin-top: 30px; }
+    margin-top: 40px; }
     #serwis #pc {
       height: 1px;
       visibility: hidden; }
@@ -730,7 +730,7 @@
 
   #pomoc {
     height: 1000px;
-    margin-top: 30px; }
+    margin-top: 40px; }
     #pomoc #pc {
       height: 1px;
       visibility: hidden; }
@@ -750,6 +750,31 @@
       width: 30%;
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      border-bottom-color: lightgray; } }
+      border-bottom-color: lightgray; }
+    #pomoc #mobile {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      #pomoc #mobile .text {
+        margin-top: 15px; }
+      #pomoc #mobile #textbox {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        background-color: #212946;
+        color: white;
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold; }
+        #pomoc #mobile #textbox #charbox {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 20px; }
+      #pomoc #mobile figure {
+        margin-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
