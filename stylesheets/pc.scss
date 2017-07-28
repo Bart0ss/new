@@ -469,7 +469,6 @@
 	}
 	
 	#pomoc
-	
 	{
 		height: 700px;
 		margin-top: 30px;
@@ -568,6 +567,89 @@
 
 					height: 200px;
 				}
+			}
+		}
+	}
+	
+	#kontakt
+	{
+		margin-top: 50px;
+		height: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: bold;
+		position: relative;
+		left: 15%;
+		#mobile
+		{
+			height: 0px;
+			visibility: hidden;
+		}
+
+		#form
+		{
+			position: relative;
+			right: 4%;
+			display:block;
+			float: left;
+		}
+		#info
+		{
+			padding-top: 10px;
+			margin-left: 500px;
+			text-align: center;
+			width: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.blue_message
+		{
+			font-weight: bold;
+			font-size: 25px;
+			color: rgb(20,138,225);
+		}
+		
+		.button, #submit
+		{
+			background-color: rgb(20,138,225);
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		#kadra
+		{
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			left: 10%;
+			clear: both;
+			
+			.opis
+			{
+				float: left;
+				margin-top: 100px;
+				margin-left: 50px;
+			}
+			#pracownik1
+			{
+				float: left;
+				margin-top: 50px;
+			}
+			#pracownik2
+			{
+				float: left;
+				margin-top: 50px;
+				margin-left: 50px;
 			}
 		}
 	}

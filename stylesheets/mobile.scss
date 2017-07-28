@@ -384,7 +384,7 @@
 			.img
 			{
 				margin-top: 10px;
-				opacity: 0.3;
+				opacity: 1;
 				width: 100px;
 				height: 100px;
 			}
@@ -392,11 +392,6 @@
 			{
 				margin-left: 50px;
 			}
-			.img:hover
-			{
-				opacity: 1;
-			}
-		
 		}}
 	
 	footer
@@ -613,6 +608,72 @@
 			{
 				margin-top: 40px;
 			}
+		}
+	}
+	
+		
+	#kontakt
+	{
+		#pc
+		{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;	
+		}
+		#mobile
+		{
+			margin-top: 40px;
+			height: 1200px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			font-size: 16px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
+			
+
+			#kadra
+			{
+				
+				margin-top: 30px;
+			}
+			.fa
+			{
+				margin-top: 15px;
+			}
+
+			.blue_message
+			{
+				font-weight: bold;
+				font-size: 25px;
+				color: rgb(20,138,225);
+			}
+
+			.img-circle
+			{
+				margin-top: 25px;
+			}	
+
+			.img-circle:first-child
+			{
+				margin-top: 5px;
+			}
+			
+			.button, #submit
+			{
+				background-color: rgb(20,138,225);
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+		
 		}
 	}
 }

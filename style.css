@@ -371,7 +371,67 @@
         #pomoc #pc .row .text {
           width: 500px; }
       #pomoc #pc .row:nth-child(2) .text {
-        height: 200px; } }
+        height: 200px; }
+
+  #kontakt {
+    margin-top: 50px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 15%; }
+    #kontakt #mobile {
+      height: 0px;
+      visibility: hidden; }
+    #kontakt #form {
+      position: relative;
+      right: 4%;
+      display: block;
+      float: left; }
+    #kontakt #info {
+      padding-top: 10px;
+      margin-left: 500px;
+      text-align: center;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    #kontakt .blue_message {
+      font-weight: bold;
+      font-size: 25px;
+      color: #148ae1; }
+    #kontakt .button, #kontakt #submit {
+      background-color: #148ae1;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer; }
+    #kontakt #kadra {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      left: 10%;
+      clear: both; }
+      #kontakt #kadra .opis {
+        float: left;
+        margin-top: 100px;
+        margin-left: 50px; }
+      #kontakt #kadra #pracownik1 {
+        float: left;
+        margin-top: 50px; }
+      #kontakt #kadra #pracownik2 {
+        float: left;
+        margin-top: 50px;
+        margin-left: 50px; } }
 @media screen and (max-width: 768px) {
   body {
     max-width: 100%;
@@ -626,13 +686,11 @@
         background-color: red; }
       #marki #znaczki .img {
         margin-top: 10px;
-        opacity: 0.3;
+        opacity: 1;
         width: 100px;
         height: 100px; }
       #marki #znaczki .img:nth-child(2) {
         margin-left: 50px; }
-      #marki #znaczki .img:hover {
-        opacity: 1; }
 
   footer {
     height: 700px;
@@ -778,6 +836,44 @@
           height: 100%;
           width: 20px; }
       #pomoc #mobile figure {
-        margin-top: 40px; } }
+        margin-top: 40px; }
+
+  #kontakt #pc {
+    height: 0px;
+    width: 0px;
+    visibility: hidden; }
+  #kontakt #mobile {
+    margin-top: 40px;
+    height: 1200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold; }
+    #kontakt #mobile #kadra {
+      margin-top: 30px; }
+    #kontakt #mobile .fa {
+      margin-top: 15px; }
+    #kontakt #mobile .blue_message {
+      font-weight: bold;
+      font-size: 25px;
+      color: #148ae1; }
+    #kontakt #mobile .img-circle {
+      margin-top: 25px; }
+    #kontakt #mobile .img-circle:first-child {
+      margin-top: 5px; }
+    #kontakt #mobile .button, #kontakt #mobile #submit {
+      background-color: #148ae1;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer; } }
 
 /*# sourceMappingURL=style.css.map */
