@@ -7,8 +7,7 @@
     overflow-x: hidden; }
 
   header {
-    margin-top: 20px;
-    height: 75px; }
+    margin-top: 20px; }
     header .nav {
       text-align: center;
       display: flex;
@@ -24,9 +23,9 @@
       header .nav .menu {
         visibility: visible; }
       header .nav .lg {
-        height: 70px; }
+        height: 50px; }
         header .nav .lg a {
-          width: 150px; }
+          width: 250px; }
       header .nav .md {
         height: 50px; }
         header .nav .md a {
@@ -60,7 +59,7 @@
           font-weight: bold; }
 
   .borderbot {
-    height: 100px;
+    height: 75px;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: lightgray; }
@@ -400,6 +399,8 @@
       justify-content: center;
       align-items: center;
       flex-direction: column; }
+      #kontakt #info .fa::first-letter {
+        color: #148ae1; }
     #kontakt .blue_message {
       font-weight: bold;
       font-size: 25px;
