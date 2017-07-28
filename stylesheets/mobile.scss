@@ -501,7 +501,7 @@
 	{
 		height: 1100px;
 		margin-top: 40px;
-			
+		margin-bottom: 30px;
 		#pc
 		{
 			height: 1px;
@@ -571,6 +571,10 @@
 		
 	#kontakt
 	{
+		margin-top: 100px;
+		
+		margin-left: 30px;
+
 		#pc
 		{
 			height: 0px;
@@ -585,14 +589,13 @@
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			font-size: 16px;
+			font-size: 25px;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: bold;
 			
 
 			#kadra
 			{
-				
 				margin-top: 30px;
 			}
 			.fa
@@ -606,6 +609,7 @@
 				font-size: 25px;
 				color: rgb(20,138,225);
 			}
+
 
 			.img-circle
 			{
