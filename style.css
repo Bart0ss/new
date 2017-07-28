@@ -505,20 +505,22 @@
     margin-left: auto;
     height: 100px; }
     .h360 ul {
-      width: 100%; }
+      width: 500px; }
 
   .header-fixed {
     background-color: white;
     z-index: 100;
+    width: 110%;
     position: fixed;
-    left: 25%;
     top: 0px; }
-    .header-fixed ul {
-      display: flex;
-      justify-content: center;
-      width: 110%; }
-      .header-fixed ul li {
-        background-color: white; }
+    .header-fixed ul li:first-child {
+      float: left; }
+    .header-fixed ul #burger {
+      position: fixed;
+      left: 10%;
+      top: 20px; }
+    .header-fixed ul li {
+      background-color: white; }
 
   #slider {
     margin-top: 25px;
@@ -618,10 +620,10 @@
         margin-left: auto;
         margin-right: auto;
         padding-right: 30px;
-        width: 400px;
+        width: 100%;
         height: 400px; }
       #aboutus ul .text {
-        margin-top: 20px;
+        margin-right: 10px;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -720,48 +722,8 @@
     footer #napis6 {
       visibility: hidden; }
 
-  #czesci {
-    margin-top: 40px; }
-    #czesci #napis {
-      text-align: center;
-      font-size: 25px;
-      font-family: 'Source Sans Pro', sans-serif;
-      border-bottom-width: 3px;
-      border-bottom-color: black;
-      border-bottom-style: solid; }
-    #czesci #entry {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    #czesci .pasek {
-      margin-top: 40px;
-      width: 30%;
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
-      border-bottom-color: lightgray; }
-
-  #naprawy {
-    margin-top: 40px; }
-    #naprawy #napis {
-      text-align: center;
-      font-size: 25px;
-      font-family: 'Source Sans Pro', sans-serif;
-      border-bottom-width: 3px;
-      border-bottom-color: black;
-      border-bottom-style: solid; }
-    #naprawy #entry {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    #naprawy .pasek {
-      margin-top: 40px;
-      width: 30%;
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
-      border-bottom-color: lightgray; }
-
   #serwis {
-    height: 1000px;
+    height: 1300px;
     margin-top: 40px; }
     #serwis #pc {
       height: 1px;
@@ -783,7 +745,10 @@
       border-bottom-style: solid;
       border-bottom-width: 2px;
       border-bottom-color: lightgray; }
+    #serwis #mobile {
+      height: 1200px; }
     #serwis ul {
+      margin-right: 30px;
       margin-top: 30px;
       text-align: center; }
       #serwis ul li {

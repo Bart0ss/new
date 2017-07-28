@@ -112,7 +112,7 @@
 	{
 		ul
 		{
-			width: 100%;
+			width: 500px;
 		}
 		margin-left: auto;
 		height: 100px;
@@ -123,17 +123,24 @@
 	{
 		background-color: white;
 		z-index: 100;
-		
+		width: 110%;
 		position: fixed;
-		left: 25%;
 		top: 0px;
 		
 		ul
 		{
-			display: flex;
-			justify-content: center;
+
 			
-			width: 110%;
+			li:first-child
+			{
+				float: left;
+			}
+			#burger
+			{
+				position: fixed;
+				left: 10%;
+				top: 20px;
+			}
 			li
 			{
 				background-color: white;
@@ -282,12 +289,12 @@
 				margin-left: auto;
 				margin-right: auto;
 				padding-right: 30px;
-				width: 400px;
+				width: 100%;
 				height: 400px;
 			}
 			.text
 			{					
-				margin-top: 20px;
+				margin-right: 10px;
 				height: 300px;
 				display: flex;
 				justify-content: center;
@@ -295,7 +302,6 @@
 				font-size: 18px;
 				font-family: 'Source Sans Pro', sans-serif;
 				overflow: auto;
-
 			}
 		}
 	}
@@ -392,7 +398,8 @@
 			{
 				margin-left: 50px;
 			}
-		}}
+		}
+	}
 	
 	footer
 	{
@@ -436,67 +443,11 @@
 		}	
 	}
 
-	#czesci
-	{
-		margin-top: 40px;
-				
-		#napis
-		{
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Source Sans Pro', sans-serif;
-			border-bottom-width: 3px;
-			border-bottom-color: black;
-			border-bottom-style: solid;
-		}
-		#entry
-		{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
-		.pasek
-		{
-			margin-top: 40px;
-			width: 30%;
-			border-bottom-style: solid;
-			border-bottom-width: 2px;
-			border-bottom-color: lightgray;	
-		}
-	}
-	
-	#naprawy
-	{
-		margin-top: 40px;
-				
-		#napis
-		{
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Source Sans Pro', sans-serif;
-			border-bottom-width: 3px;
-			border-bottom-color: black;
-			border-bottom-style: solid;
-		}
-		#entry
-		{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
-		.pasek
-		{
-			margin-top: 40px;
-			width: 30%;
-			border-bottom-style: solid;
-			border-bottom-width: 2px;
-			border-bottom-color: lightgray;	
-		}
-	}
-	
+
+
 	#serwis
 	{
-		height: 1000px;
+		height: 1300px;
 		margin-top: 40px;
 			
 		#pc
@@ -528,8 +479,14 @@
 			border-bottom-color: lightgray;	
 		}
 		
+		#mobile
+		{
+			height: 1200px;
+		}
+		
 		ul
 		{
+			margin-right: 30px;
 			margin-top: 30px;
 			text-align: center;
 			li
