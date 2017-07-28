@@ -826,6 +826,8 @@
         margin-top: 30px; }
       #kontakt #mobile .fa {
         margin-top: 15px; }
+      #kontakt #mobile .fa::first-letter {
+        color: #148ae1; }
       #kontakt #mobile .blue_message {
         font-weight: bold;
         font-size: 25px;
