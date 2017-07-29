@@ -614,15 +614,34 @@
 
 		#form
 		{
-			position: relative;
-			right: 4%;
+			@media screen and (max-width: 1039px) 
+			{  
+				position: relative;
+				right: 27%;
+			}
+			@media screen and (min-width: 1039px) 
+			{
+				position: relative;
+				right: 15%;
+			}
 			display:block;
 			float: left;
 		}
 		#info
 		{
+			@media screen and (max-width: 1039px) 
+			{  
+				background-color: red;
+				position: relative;
+				right: 15%;
+				top: 50px;
+			}
+			@media screen and (min-width: 1039px) 
+			{
+					margin-left: 50px;
+			}
 			padding-top: 10px;
-			margin-left: 500px;
+
 			text-align: center;
 			width: 300px;
 			display: flex;
@@ -656,10 +675,11 @@
 		}
 		#kadra
 		{
+
 			margin-left: auto;
 			margin-right: auto;
 			position: relative;
-			left: 10%;
+			left: 5%;
 			clear: both;
 			
 			.opis

@@ -401,19 +401,35 @@
       height: 0px;
       visibility: hidden; }
     #kontakt #form {
-      position: relative;
-      right: 4%;
       display: block;
-      float: left; }
+      float: left; } }
+    @media screen and (min-width: 769px) and (max-width: 1039px) {
+      #kontakt #form {
+        position: relative;
+        right: 27%; } }
+    @media screen and (min-width: 769px) and (min-width: 1039px) {
+      #kontakt #form {
+        position: relative;
+        right: 15%; } }
+@media screen and (min-width: 769px) {
     #kontakt #info {
       padding-top: 10px;
-      margin-left: 500px;
       text-align: center;
       width: 300px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; }
+      flex-direction: column; } }
+    @media screen and (min-width: 769px) and (max-width: 1039px) {
+      #kontakt #info {
+        background-color: red;
+        position: relative;
+        right: 15%;
+        top: 50px; } }
+    @media screen and (min-width: 769px) and (min-width: 1039px) {
+      #kontakt #info {
+        margin-left: 50px; } }
+@media screen and (min-width: 769px) {
       #kontakt #info .fa::first-letter {
         color: #148ae1; }
     #kontakt .blue_message {
@@ -435,7 +451,7 @@
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      left: 10%;
+      left: 5%;
       clear: both; }
       #kontakt #kadra .opis {
         float: left;
