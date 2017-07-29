@@ -422,7 +422,6 @@
       flex-direction: column; } }
     @media screen and (min-width: 769px) and (max-width: 1039px) {
       #kontakt #info {
-        background-color: red;
         position: relative;
         right: 15%;
         top: 50px; } }
