@@ -382,7 +382,7 @@
       @media screen and (min-width: 769px) and (max-width: 1039px) {
         #pomoc #pc .row #text2 {
           position: relative;
-          left: 0px; } }
+          right: 10px; } }
 @media screen and (min-width: 769px) {
         #pomoc #pc .row .row:nth-child(2) .text {
           height: 200px; }
