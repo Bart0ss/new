@@ -518,7 +518,7 @@
 			{
 				margin-right: 30px;
 				text-align: center;
-				height: 200px;
+				height: 150px;
 				width: 500px;
 				font-size: 25px;
 				font-family: 'Source Sans Pro', sans-serif;
@@ -545,16 +545,18 @@
 			figure
 			{
 				margin-right: 30px;
-				background-color: red;
+
 				img
 				{
 					background-repeat: no-repeat;
 				}
 			}
+			
 			ul
 			{
 				list-style: none;
 			}
+			
 			.row
 			{
 				margin-top: 15px;
@@ -564,18 +566,34 @@
 				{
 					width: 500px;
 				}
-			}
+				
+				@media screen and (min-width: 1040px) 
+				{  
+					#text2
+					{
+						position: relative;
+						right: 10px;
+					}
+				}
 			
+				@media screen and (max-width: 1039px) 
+				{  
+					#text2
+					{
+						position: relative;
+						left: 0px;
+					}
+				}
 			.row:nth-child(2)
 			{
 				.text
 				{
-
 					height: 200px;
 				}
 			}
 		}
 	}
+}
 	
 	#kontakt
 	{

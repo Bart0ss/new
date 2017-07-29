@@ -161,31 +161,32 @@
 		.col-lg-4
 		{
 			@media screen and (max-width: 550px) 
-{  
-			h2
-			{
-				width: 90%;
-				text-align: center;
-				font-size: 30px;
-				font-weight: bold;
-				font-family: 'Source Sans Pro', sans-serif;
-				color: white;
-				background-color: black;
+			{  
+				h2
+				{
+					width: 90%;
+					text-align: center;
+					font-size: 30px;
+					font-weight: bold;
+					font-family: 'Source Sans Pro', sans-serif;
+					color: white;
+					background-color: black;
+				}
 			}
-}
-@media screen and (min-width: 551px) 
-{  
-			h2
-			{
-				width: 520px;
-				text-align: center;
-				font-size: 42px;
-				font-weight: bold;
-				font-family: 'Source Sans Pro', sans-serif;
-				color: white;
-				background-color: black;
+			
+			@media screen and (min-width: 551px) 
+			{  
+				h2
+				{
+					width: 520px;
+					text-align: center;
+					font-size: 42px;
+					font-weight: bold;
+					font-family: 'Source Sans Pro', sans-serif;
+					color: white;
+					background-color: black;
+				}
 			}
-}
 		}
 	}
 	
