@@ -371,7 +371,7 @@
 
 	#marki
 	{
-		height: 650px;
+		height: 500px;
 		padding-top: 15px;
 		margin-left: auto;
 		margin-right: auto;
@@ -400,7 +400,14 @@
 			border-bottom-color: lightgray;	
 		}
 		
-		#znaczki
+		#pc
+		{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;
+		}
+		
+		#mobile
 		{
 			.hidden-sm, .hidden-xs
 			{
