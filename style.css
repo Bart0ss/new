@@ -529,7 +529,17 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center; } }
+  @media screen and (max-width: 768px) and (max-width: 550px) {
+    #slider .col-lg-4 h2 {
+      width: 300px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: white;
+      background-color: black; } }
+  @media screen and (max-width: 768px) and (min-width: 551px) {
     #slider .col-lg-4 h2 {
       width: 520px;
       text-align: center;
@@ -537,8 +547,9 @@
       font-weight: bold;
       font-family: 'Source Sans Pro', sans-serif;
       color: white;
-      background-color: black; }
+      background-color: black; } }
 
+@media screen and (max-width: 768px) {
   #services {
     height: 620px;
     padding-top: 15px; }
@@ -621,7 +632,17 @@
         margin-right: auto;
         padding-right: 30px;
         width: 100%;
-        height: 400px; }
+        height: 400px; } }
+    @media screen and (max-width: 768px) and (max-width: 550px) {
+      #aboutus ul .text {
+        margin-right: 10px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif; } }
+    @media screen and (max-width: 768px) and (min-width: 551px) {
       #aboutus ul .text {
         margin-right: 10px;
         height: 300px;
@@ -629,9 +650,9 @@
         justify-content: center;
         align-items: center;
         font-size: 18px;
-        font-family: 'Source Sans Pro', sans-serif;
-        overflow: auto; }
+        font-family: 'Source Sans Pro', sans-serif; } }
 
+@media screen and (max-width: 768px) {
   #parallax {
     height: 645px;
     background-image: url(images/paralax.jpg);
@@ -696,7 +717,7 @@
         margin-left: 50px; }
 
   footer {
-    height: 700px;
+    height: 800px;
     background-image: url(images/stopka.jpg);
     background-repeat: no-repeat;
     text-align: center;
@@ -806,21 +827,25 @@
         margin-top: 40px; }
 
   #kontakt {
-    margin-top: 150px;
-    height: 1400px;
+    margin-top: 100px;
+    height: 1300px;
     margin-left: 30px; }
     #kontakt #pc {
       height: 0px;
       width: 0px;
       visibility: hidden; }
     #kontakt #mobile {
+      margin-left: auto;
+      margin-right: auto;
+      right: 40px;
+      width: 300px;
       margin-top: 40px;
       height: 1200px;
       text-align: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-size: 25px;
+      font-size: 21px;
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: bold; }
       #kontakt #mobile #kadra {
