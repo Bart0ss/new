@@ -219,11 +219,9 @@
 			border-bottom-width: 2px;
 			border-bottom-color: lightgray;	
 		}
-		
 		#pc
 		{
-			height: 1px;
-			visibility: hidden;
+			display: none;
 		}
 
 		ul
@@ -411,9 +409,7 @@
 		
 		#pc
 		{
-			height: 0px;
-			width: 0px;
-			visibility: hidden;
+			display: none;
 		}
 		
 		#mobile
@@ -441,6 +437,7 @@
 				width: 100px;
 				height: 100px;
 			}
+			
 			.img:nth-child(2)
 			{
 				margin-left: 50px;
@@ -450,57 +447,62 @@
 	
 	footer
 	{
-		height: 800px;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 30px;
+	
 		background-image: url(images/stopka.jpg);
 		background-repeat: no-repeat;
+		background-position: center;
 		text-align: center;
 		color: white;
 
 		#napis1
 		{
-				font-size: 150px;
+			font-size: 150px;
 		}	
 		#napis2
 		{
-				font-size: 72px;
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: bold;
+			font-size: 52px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
 		}
 		#napis3
 		{
-				font-size: 36px;
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: bold;
+			font-size: 28px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
 		}
 		#napis4
 		{
-				font-size: 25px;
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: bold;
+			font-size: 17px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
 		}
 		#napis5
 		{
-				font-size: 18px;
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: bold;
+			font-size: 13px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
 		}
 		#napis6
 		{
-			visibility: hidden;
+			display: none;
 		}	
 	}
 
-
-
 	#serwis
 	{
-		height: 1200px;
-		margin-top: 40px;
-			
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+
 		#pc
 		{
-			height: 1px;
-			visibility: hidden;
+			display: none;
 		}
 		#napis
 		{
@@ -526,13 +528,18 @@
 			border-bottom-color: lightgray;	
 		}
 		
-		#mobile
-		{
-			height: 1200px;
-		}
 		
 		ul
 		{
+			@media screen and (min-width: 280px) and (max-width: 330px) 
+			{  
+				margin-top: 20px;
+				height: 1600px;
+			}
+			@media screen and (min-width: 331px) and (max-width: 400px) 
+			{  
+				height: 1500px;
+			}
 			margin-right: 30px;
 			margin-top: 30px;
 			text-align: center;
@@ -547,12 +554,11 @@
 	#pomoc
 	{
 		height: 1100px;
-		margin-top: 40px;
+		margin-top: 20px;
 		margin-bottom: 30px;
 		#pc
 		{
-			height: 1px;
-			visibility: hidden;
+			display: none;
 		}
 		#napis
 		{
@@ -602,8 +608,6 @@
 				}		
 				@media screen and (max-width: 529px)
 				{ 
-		
-					
 					width: 300px;
 					height: 200px;
 				}
@@ -646,9 +650,7 @@
 
 		#pc
 		{
-			height: 0px;
-			width: 0px;
-			visibility: hidden;	
+			display: none;
 		}
 		#mobile
 		{
@@ -714,7 +716,6 @@
 				margin: 4px 2px;
 				cursor: pointer;
 			}
-		
 		}
 	}
 }

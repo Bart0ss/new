@@ -9,7 +9,7 @@
 		max-width: 100%;
 		overflow-x: hidden;
 	}
-
+	
 	header
 	{
 		margin-top: 20px;
@@ -61,7 +61,7 @@
 			}
 			.hamburger
 			{
-				margin-left: 5px;
+				display: none;
 			}
 			
 			ul
@@ -134,9 +134,7 @@
 		
 		#mobile
 		{
-			width: 0px;
-			height: 0px;
-			visibility: hidden;
+			display: none;
 		}
 		#napis
 		{
@@ -250,9 +248,7 @@
 		
 		#mobile
 		{
-			height: 0px;
-			width: 0px;
-			visibility: hidden;
+			display: none;
 		}
 		#pc
 		{
@@ -383,8 +379,11 @@
 	footer
 	{
 		height: 765px;
+		
 		background-image: url(images/stopka.jpg);
-		background-size: 100% 765px;
+		background-size: 99% 765px;
+		background-repeat: no-repeat;
+		background-position: center;
 		text-align: center;
 		color: white;
 
@@ -429,11 +428,21 @@
 	#serwis
 	{
 		margin-top: 30px;
-		height: 500px;
+		margin-right: 15px;
+		padding-right: 15px;
+		overflow: hidden;
+		@media screen and (max-width: 900px) 
+		{  
+			height: 90vw;
+		}		
+		@media screen and (max-width: 950px) and (min-width: 901px)
+		{  
+			height: 80vw;
+		}	
+		
 		#mobile
 		{
-			height: 1px;
-			visibility: hidden;
+			display: none;
 		}
 		#napis
 		{
@@ -491,8 +500,7 @@
 		
 		#mobile
 		{
-			height: 1px;
-			visibility: hidden;
+			display: none;
 		}
 		#napis
 		{
@@ -621,8 +629,7 @@
 		left: 15%;
 		#mobile
 		{
-			height: 0px;
-			visibility: hidden;
+			display: none;
 		}
 
 		#form
