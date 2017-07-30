@@ -131,6 +131,13 @@
 		padding-top: 15px;
 		padding-left: 15px;
 		padding-right: 15px;
+		
+		#mobile
+		{
+			width: 0px;
+			height: 0px;
+			visibility: hidden;
+		}
 		#napis
 		{
 			text-align: center;
@@ -207,12 +214,6 @@
 				justify-content: space-around;
 				list-style: none;
 			}
-		}
-		
-		#mobile
-		{
-			height: 1px;
-			visibility: hidden;
 		}
 	}
 	

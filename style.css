@@ -85,6 +85,10 @@
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px; }
+    #services #mobile {
+      width: 0px;
+      height: 0px;
+      visibility: hidden; }
     #services #napis {
       text-align: center;
       font-size: 25px;
@@ -133,9 +137,6 @@
         display: flex;
         justify-content: space-around;
         list-style: none; }
-    #services #mobile {
-      height: 1px;
-      visibility: hidden; }
 
   #marki {
     margin-top: 25px;
