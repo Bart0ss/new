@@ -473,7 +473,7 @@
         margin-left: 50px; } }
 @media screen and (max-width: 768px) {
   body {
-    max-width: 100%;
+    max-width: 99%;
     overflow-x: hidden; }
 
   header {
