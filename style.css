@@ -72,14 +72,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: fill h1;
-      object-fit-width: 540px;
-      object-fit-text-align: center;
-      object-fit-font-size: 42px;
-      object-fit-font-weight: bold;
-      object-fit-font-family: 'Source Sans Pro', sans-serif;
-      object-fit-color: white;
-      object-fit-background-color: black; }
+    object-fit: fill; }
+    #slider h1 {
+      width: 540px;
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: white;
+      background-color: black; }
 
   #services {
     height: 300px;
@@ -573,24 +574,20 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center; } }
   @media screen and (max-width: 768px) and (max-width: 550px) {
     #slider h1 {
       width: 90%;
-      text-align: center;
       font-size: 30px;
-      font-weight: bold;
-      font-family: 'Source Sans Pro', sans-serif;
-      color: white;
       background-color: black; } }
   @media screen and (max-width: 768px) and (min-width: 551px) {
     #slider h1 {
       width: 520px;
-      text-align: center;
       font-size: 42px;
-      font-weight: bold;
-      font-family: 'Source Sans Pro', sans-serif;
-      color: white;
       background-color: black; } }
 
 @media screen and (max-width: 768px) {

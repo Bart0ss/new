@@ -158,17 +158,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		color: white;
+		font-weight: bold;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
 			@media screen and (max-width: 550px) 
 			{  
 				h1
 				{
 					width: 90%;
-					text-align: center;
 					font-size: 30px;
-					font-weight: bold;
-					font-family: 'Source Sans Pro', sans-serif;
-					color: white;
 					background-color: black;
 				}
 			}
@@ -178,11 +177,7 @@
 				h1
 				{
 					width: 520px;
-					text-align: center;
 					font-size: 42px;
-					font-weight: bold;
-					font-family: 'Source Sans Pro', sans-serif;
-					color: white;
 					background-color: black;
 				}
 			}
