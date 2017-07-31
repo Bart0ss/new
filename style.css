@@ -302,7 +302,7 @@
 @media screen and (min-width: 769px) {
     #serwis #mobile {
       display: none; }
-    #serwis #napis {
+    #serwis .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
@@ -340,7 +340,7 @@
     margin-top: 30px; }
     #pomoc #mobile {
       display: none; }
-    #pomoc #napis {
+    #pomoc .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
@@ -572,14 +572,14 @@
   #services {
     height: 620px;
     padding-top: 15px; }
-    #services #napis {
+    #services .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #services #entry {
+    #services .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -621,14 +621,14 @@
     padding-top: 15px;
     margin-left: auto;
     margin-right: auto; }
-    #aboutus #napis {
+    #aboutus .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #aboutus #entry {
+    #aboutus .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -704,14 +704,14 @@
     #marki {
       height: 600px; } }
 @media screen and (max-width: 768px) {
-    #marki #napis {
+    #marki .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #marki #entry {
+    #marki .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -780,14 +780,14 @@
     flex-direction: column; }
     #serwis #pc {
       display: none; }
-    #serwis #napis {
+    #serwis .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #serwis #entry {
+    #serwis .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -825,14 +825,14 @@
 @media screen and (max-width: 768px) {
     #pomoc #pc {
       display: none; }
-    #pomoc #napis {
+    #pomoc .napis {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #pomoc #entry {
+    #pomoc .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
