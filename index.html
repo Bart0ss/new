@@ -38,14 +38,76 @@
 <!-- end header -->
 
 <!-- start slider -->
-		<div id="slider">
-			
-			<div class="col-lg-4">
-				<h2>POWIERZ SWÓJ SAMOCHÓD</h2>
-				<h2>DO NAPRAWY SPECJALISTOM</h2>
-			</div>
-			
+		<div id="slider" onClick="gotoNext()">
+	
+				<h1>POWIERZ SWÓJ SAMOCHÓD
+				DO NAPRAWY SPECJALISTOM</h1>
+	
 		</div>
+		
+		<script>
+			
+			
+			document.onkeydown = checkKey;
+			
+			function checkKey(e) 
+			{
+				e = e || window.event;
+
+				if (e.keyCode == '37') 
+				{
+				  gotoPrevious();
+				}
+				else if (e.keyCode == '39') 
+				{
+				   gotoNext();
+				}
+			}
+			
+			var pathstring =  "url(images/";
+			var background_array = ["strona_glowna_slider.jpg","stopka.jpg","paralax.jpg"];
+			var background_counter = 0;
+			
+			function setBackground()
+			{
+				console.log("counter: "  + background_counter);
+				console.log(background_array[background_counter]);
+				
+				var doc = document.getElementById("slider");
+				doc.style.backgroundImage = pathstring + background_array[background_counter] + ')';
+				doc.style.backgroundPosition = "center";	
+		
+			}
+			
+			function gotoNext()
+			{
+				if (background_counter == background_array.length -1)
+				{
+					background_counter=0;
+					setBackground();
+				}
+				else if (background_counter < background_array.length && background_counter 
+														!= background_array.length -1)
+				{
+					background_counter++;
+					setBackground();
+				}
+			}	
+			function gotoPrevious()
+			{
+				if (background_counter > 0)
+				{
+					background_counter--;
+					setBackground();
+				}
+				else if (background_counter == 0)
+				{
+					background_counter = background_array.length -1;
+					setBackground();
+				}
+			}
+			</script>
+			
 <!-- end slider -->
 
 <!-- start services -->

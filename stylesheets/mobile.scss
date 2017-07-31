@@ -150,6 +150,7 @@
 
 	#slider
 	{
+		
 		margin-top: 25px;
 		height: 690px;
 		background-image: url(images/strona_glowna_slider.jpg);
@@ -157,12 +158,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
-		.col-lg-4
-		{
+
 			@media screen and (max-width: 550px) 
 			{  
-				h2
+				h1
 				{
 					width: 90%;
 					text-align: center;
@@ -176,7 +175,7 @@
 			
 			@media screen and (min-width: 551px) 
 			{  
-				h2
+				h1
 				{
 					width: 520px;
 					text-align: center;
@@ -187,7 +186,7 @@
 					background-color: black;
 				}
 			}
-		}
+		
 	}
 	
 	#services
