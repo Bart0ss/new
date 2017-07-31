@@ -105,6 +105,8 @@
 	#slider
 	{
 		margin-top: 25px;
+		margin-left: 0.5%;
+		margin-right: 0.5%;
 		height: 690px;
 		width: 99%;
 		background-image: url(images/strona_glowna_slider.jpg);
@@ -587,23 +589,13 @@
 					width: 500px;
 				}
 				
-				@media screen and (min-width: 1040px) 
-				{  
-					#text2
-					{
-						position: relative;
-						right: 10px;
-					}
+
+				#text2
+				{
+					position: relative;
+					right: 19px;
 				}
-			
-				@media screen and (max-width: 1039px) 
-				{  
-					#text2
-					{
-						position: relative;
-						right: 10px;
-					}
-				}
+				
 			.row:nth-child(2)
 			{
 				.text
@@ -617,15 +609,15 @@
 	
 	#kontakt
 	{
+		letter-spacing: 1px;
 		margin-top: 50px;
 		height: 700px;
-		margin-left: auto;
-		margin-right: auto;
+
 		font-size: 25px;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: bold;
-		position: relative;
-		left: 15%;
+		display: flex;
+		justify-content: center;
 		#mobile
 		{
 			display: none;
@@ -635,33 +627,20 @@
 		{
 			@media screen and (max-width: 1039px) 
 			{  
-				position: relative;
-				right: 27%;
 			}
 			@media screen and (min-width: 1039px) 
 			{
-				position: relative;
-				right: 15%;
 			}
 			display:block;
 			float: left;
 		}
 		#info
 		{
-			@media screen and (max-width: 1039px) 
-			{  
-				position: relative;
-				right: 15%;
-				top: 50px;
-			}
-			@media screen and (min-width: 1039px) 
-			{
-					margin-left: 50px;
-			}
+			margin-left: 450px;
 			padding-top: 10px;
 
 			text-align: center;
-			width: 300px;
+			width: 350px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -693,28 +672,24 @@
 		}
 		#kadra
 		{
-
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			left: 5%;
 			clear: both;
-			
+			margin-top: 30px;
 			.opis
 			{
 				float: left;
-				margin-top: 100px;
+				margin-top: 60px;
 				margin-left: 50px;
 			}
 			#pracownik1
 			{
+				margin-top: 10px;
 				float: left;
-				margin-top: 50px;
+
 			}
 			#pracownik2
 			{
 				float: left;
-				margin-top: 50px;
+				margin-top: 10px;
 				margin-left: 50px;
 			}
 		}
