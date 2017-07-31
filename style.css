@@ -98,7 +98,7 @@
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #services #entry {
+    #services .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -152,7 +152,7 @@
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #marki #entry {
+    #marki .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -196,7 +196,7 @@
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #aboutus #entry {
+    #aboutus .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -306,7 +306,7 @@
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #serwis #entry {
+    #serwis .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
@@ -344,7 +344,7 @@
       border-bottom-width: 3px;
       border-bottom-color: black;
       border-bottom-style: solid; }
-    #pomoc #entry {
+    #pomoc .entry {
       display: flex;
       flex-direction: row;
       justify-content: center; }
