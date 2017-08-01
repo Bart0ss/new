@@ -259,6 +259,11 @@
       font-size: 18px;
       font-family: 'Source Sans Pro', sans-serif; }
 
+  #map {
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%; }
+
   footer {
     height: 765px;
     background-image: url(images/stopka.jpg);
