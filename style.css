@@ -58,7 +58,9 @@
           height: 50px;
           padding-top: 20px;
           color: #1a8ee5;
-          font-weight: bold; }
+          font-weight: bold;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 16px; }
 
   .borderbot {
     height: 75px;
@@ -304,7 +306,7 @@
 @media screen and (min-width: 769px) {
     #serwis #mobile {
       display: none; }
-    #serwis .napis {
+    #serwis .napissrodkowy {
       text-align: center;
       font-size: 25px;
       font-family: 'Source Sans Pro', sans-serif;
@@ -434,6 +436,8 @@
       font-size: 25px;
       color: #148ae1; }
     #kontakt .button, #kontakt #submit {
+      position: relative;
+      bottom: 20px;
       background-color: #148ae1;
       border: none;
       color: white;
@@ -446,7 +450,7 @@
       cursor: pointer; }
     #kontakt #kadra {
       clear: both;
-      margin-top: 30px; }
+      margin-top: 120px; }
       #kontakt #kadra .opis {
         float: left;
         margin-top: 60px;

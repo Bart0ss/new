@@ -93,6 +93,8 @@
 					padding-top: 20px;
 					color: #1a8ee5;
 					font-weight: bold;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 16px;
 				}
 			}
 		}
@@ -453,7 +455,7 @@
 		{
 			display: none;
 		}
-		.napis
+		.napissrodkowy
 		{
 			text-align: center;
 			font-size: 25px;
@@ -667,6 +669,8 @@
 		
 		.button, #submit
 		{
+			position: relative;
+			bottom: 20px;
 			background-color: rgb(20,138,225);
 			border: none;
 			color: white;
@@ -681,7 +685,7 @@
 		#kadra
 		{
 			clear: both;
-			margin-top: 30px;
+			margin-top: 120px;
 			.opis
 			{
 				float: left;
