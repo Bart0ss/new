@@ -22,20 +22,31 @@
 	
     <body>
 <!-- start topnavbar -->
-		<header class="borderbot">
-			<nav class="nav container-fluid">
+		<header>
+			<div id="pc_menu">
 				<ul>
-					<div id="burger" class="hidden-md hidden-lg hidden-xl">
-						<button class="hamburger" onClick="parse()"></button>	
-					</div>
 					<li id="img" onClick="url()"></li>
-					<li class="menu this"><a href="serwis.html">Serwis</a></li>
+					<li class="menu"><a href="serwis.html">Serwis</a></li>
 					<li class="menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
 					<li class="menu"><a href="czesci.html">Części</a></li>
 					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
 					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
 				</ul>	
-			</nav>
+			</div>		
+			<div id="mobile_menu">
+				<ul>
+					<div id="burger" class="hidden-md hidden-lg hidden-xl">
+						<button class="hamburger" onClick="parse()"></button>	
+					</div>
+					<li id="img" onClick="url()"></li>
+					<li class="menu"><a href="serwis.html">Serwis</a></li>
+					<li class="menu lg"><a href="naprawy.html">Naprawy Blacharsko-lakiernicze</a></li>
+					<li class="menu"><a href="czesci.html">Części</a></li>
+					<li class="menu md"><a href="pomoc_drogowa.html">Pomoc drogowa</a></li>
+					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
+				</ul>	
+			</div>
+			
 		</header>
 <!-- end topnavbar -->
 
@@ -177,9 +188,8 @@
 					for (var i = 0; i < cusid_ele.length; ++i) 
 					{
 						var item = cusid_ele[i];  
-						item.style.visibility="visible";
+						item.style.display = "inherit";
 					}
-				    $('header').addClass('h360');
 					isShown=true;
 				}
 				else
@@ -188,10 +198,9 @@
 					for (var i = 0; i < cusid_ele.length; ++i) 
 					{
 						var item = cusid_ele[i];  
-						item.style.visibility="hidden";
-						$('header').removeClass('h360');
-						isShown=false;
+						item.style.display = "none";
 					}
+					isShown=false;
 				}
 			}
 				

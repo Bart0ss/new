@@ -13,7 +13,11 @@
 	header
 	{
 		margin-top: 20px;
-		.nav
+		#mobile_menu
+		{
+			display: none;
+		}
+		#pc_menu
 		{					
 			text-align: center;
 			display: flex;
