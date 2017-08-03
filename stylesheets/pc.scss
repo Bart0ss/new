@@ -626,9 +626,13 @@
 	
 	#kontakt
 	{
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-top-color: lightgray;
+		padding-top: 30px;
 		letter-spacing: 1px;
-		margin-top: 50px;
-		height: 700px;
+		margin-top: 40px;
+		height: 750px;
 
 		font-size: 25px;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -692,7 +696,7 @@
 		#kadra
 		{
 			clear: both;
-			margin-top: 120px;
+			margin-top: 50px;
 			.opis
 			{
 				float: left;
