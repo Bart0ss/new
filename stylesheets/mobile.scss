@@ -170,9 +170,14 @@
 		ul
 		{
 			height: 55px;
-			li:not(:nth-child(2))
-			{
-				background-color: red;
+			
+			@media screen and (max-width: 320px) 
+			{  
+				li:nth-child(2)
+				{
+					position: relative;
+					left: 30px;
+				}
 			}
 		}
 	}
