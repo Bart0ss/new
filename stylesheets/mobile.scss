@@ -462,6 +462,7 @@
 		
 		#mobile
 		{
+			font-size: 0px;
 			.hidden-sm, .hidden-xs
 			{
 				visibility: hidden;
@@ -497,6 +498,11 @@
 		width: 98%;
 		margin-left: 1%;
 		margin-right: 1%;
+		
+		iframe
+		{	
+			pointer-events: none;
+		}
 	}
 	footer
 	{
@@ -749,8 +755,10 @@
 				position: relative;
 				right: 15px;
 				@media screen and (max-width: 340px) 
-				{  
-					margin-right: 20px;
+				{ 
+					position: relative;
+					right: 35px;
+					margin-right: 10px;
 				}
 			}
 
