@@ -197,11 +197,14 @@
 		font-weight: bold;
 		font-family: 'Source Sans Pro', sans-serif;
 		text-align: center;
+		
 			@media screen and (max-width: 550px) 
 			{  
 				h1
 				{
 					width: 90%;
+					margin-left: 2%;
+					margin-right: 2%;
 					font-size: 30px;
 					background-color: black;
 				}
@@ -211,8 +214,21 @@
 			{  
 				h1
 				{
-					width: 520px;
+					width: 90%;
+					margin-left: 2%;
+					margin-right: 2%;
 					font-size: 42px;
+					background-color: black;
+				}
+			}
+			@media screen and (min-width: 280px)  and (max-width: 364px)
+			{  
+				h1
+				{
+					width: 90%;
+					margin-left: 2%;
+					margin-right: 2%;
+					font-size: 35px;
 					background-color: black;
 				}
 			}
