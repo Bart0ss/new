@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-		
 		<title>Euro Amiwal - Kontakt</title>
-		
 		<meta charset="UTF-8"> 
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="style.css">
     </head>
 	
     <body>
 <!-- start topnavbar -->
-		<header>
+	<header>
 			<div id="pc_menu">
 				<ul>
 					<li id="img" onClick="url()"></li>
@@ -36,7 +28,7 @@
 			<div id="mobile_menu">
 				<ul>
 					<div id="burger" class="hidden-md hidden-lg hidden-xl">
-						<button class="hamburger" onClick="parse()"></button>	
+					<button class="hamburger" onClick="parse()"></button>	
 					</div>
 					<li id="img" onClick="url()"></li>
 					<li class="menu"><a href="serwis.html">Serwis</a></li>
@@ -46,110 +38,54 @@
 					<li class="menu"><a href="kontakt.html">Kontakt</a></li>
 				</ul>	
 			</div>
-			
-		</header>
+	</header>
 <!-- end topnavbar -->
 
 <!-- start kontakt -->
 <div id="kontakt">
-		
-<div id="mobile">
-	<div id="form">	
-			<form action="/action_page.php">
-				<div class="blue_message">Bądźmy w kontakcie</div><br>
-				  <input type="text" class="input"  name="firstname" placeholder="Imię:"><br>
-				  <input type="text" class="input" name="lastname" placeholder="Nazwisko:"><br>
-				  <input type="text" class="input" name="mail" placeholder="Email:"><br>
-				<textarea class="input" name="message" placeholder="Wiadomość:"></textarea><br>
-				  <br>
-				  <input id="submit" type="submit" value="Submit">
-			</form> 
+	<div class="box form">
+		<form action="/action_page.php">
+			<div class="blue_message">Bądźmy w kontakcie: </div><br>
+			  <input type="text" class="input"  name="firstname" placeholder="Imię:"><br>
+			  <input type="text" class="input" name="lastname" placeholder="Nazwisko:"><br>
+			  <input type="text" class="input" name="mail" placeholder="Email:"><br>
+			<textarea class="input" name="message" placeholder="Wiadomość:"></textarea><br>
+			  <br>
+			  <input id="submit" type="submit" value="Submit">
+		</form> 	
 	</div>
-	<div id="info">
-		<i class="fa fa-map-marker" aria-hidden="true">&nbsp; ul. Okrężna 3 44-240 Żory </i> 
+	<div class="box info">
+		<i class="fa fa-map-marker blue_message" aria-hidden="true"></i>&nbsp; ul. Okrężna 3 44-240 Żory 
 		<br>
-	
-		<i class="fa fa-envelope-o" aria-hidden="true">&nbsp; euroamiwal@biuro.pl </i>
-		
+		<i class="fa fa-envelope-o blue_message" aria-hidden="true"></i>&nbsp; euroamiwal@biuro.pl
 		<br>
-		<i class="fa fa-phone" aria-hidden="true">&nbsp; 32/ 43 43 493 </i>
-		
-		<br>
-		<i class="fa fa-info" aria-hidden="true">
+		<i class="fa fa-phone blue_message" aria-hidden="true"></i>&nbsp; 32/ 43 43 493
+		<br><br>
+		<i class="fa fa-info blue_message" aria-hidden="true"></i>
 			<b>&nbsp;Godziny Otwarcia: </b>
-			<br><br>
-			poniedziałek:	08:00 - 18:00<br>
-			wtorek:			08:00 - 18:00<br>
-			środa:			08:00 - 18:00<br>
-			czwartek:		08:00 - 18:00<br>
-			piątek:			08:00 - 18:00<br>
-			sobota:			08:00 - 14:00<br>
-		</i>
+			<br>
+				<div class="day">poniedziałek:</div>	<time>08:00 - 18:00</time><br>
+				<div class="day">wtorek:</div>			<time>08:00 - 18:00</time><br>
+				<div class="day">środa:</div>			<time>08:00 - 18:00</time><br>
+				<div class="day">czwartek:</div>		<time>08:00 - 18:00</time><br>
+				<div class="day">piątek:</div>			<time>08:00 - 18:00</time><br>
+				<div class="day">sobota:</div>			<time>08:00 - 14:00</time><br>
 	</div>
-	<div id="kadra">
-		<div class="blue_message">Porozmawiaj z naszymi doradcami </div>
-		    <img class="img-circle" src="images/pan_michal.jpg">
-				<br> Michał <br>
-				<div class="blue_message">666-777-999</div>
-		    <img class="img-circle" src="images/pan_andrzej.jpg">
-				<br> Andrzej <br>
-				<div class="blue_message">666-777-999</div>
-	</div>
-</div>
-	
-<div id="pc">
-	<div id="form">	
-			<form action="/action_page.php">
-				<div class="blue_message">Bądźmy w kontakcie</div><br>
-				  <input type="text" class="input"  name="firstname" placeholder="Imię:"><br>
-				  <input type="text" class="input" name="lastname" placeholder="Nazwisko:"><br>
-				  <input type="text" class="input" name="mail" placeholder="Email:"><br>
-				<textarea class="input" name="message" placeholder="Wiadomość:"></textarea><br>
-				  <br>
-				  <input id="submit" type="submit" value="Submit">
-			</form> 
-	</div>	
-		<div id="info">
-		<i class="fa fa-map-marker" aria-hidden="true">&nbsp; ul. Okrężna 3 44-240 Żory </i> 
+  	<div class="box employees">
 		
-		<br>
-		<i class="fa fa-envelope-o" aria-hidden="true">&nbsp; euroamiwal@biuro.pl</i>
+		<div id="employees_text" class="blue_message">Porozmawiaj z naszymi doradcami: </div><br>
 		
-		<br>
-		<i class="fa fa-phone" aria-hidden="true">&nbsp; 32/ 43 43 493 </i>
+		<img id="fotka1" class="img-circle" src="images/pan_michal.jpg">
+		<h1 id="imie1"> Michał </h1>
+		<h1 id="numer1" class="blue_message">666-777-999</h1>
+		<button id="btn1" type="button"><a href="tel:+48324343493"></a>ZADZWOŃ</button> 	
 		
-		<br>
-		<i class="fa fa-info" aria-hidden="true">
-			<b>&nbsp;Godziny Otwarcia: </b>
-			<br><br>
-			poniedziałek:	08:00 - 18:00<br>
-			wtorek:			08:00 - 18:00<br>
-			środa:			08:00 - 18:00<br>
-			czwartek:		08:00 - 18:00<br>
-			piątek:			08:00 - 18:00<br>
-			sobota:			08:00 - 14:00<br>
-		</i>
-	</div>
-	<div id="kadra">
-		<div class="blue_message">Porozmawiaj z naszymi doradcami </div>
-		    <div id="pracownik1">
-				<img class="img-circle" src="images/pan_michal.jpg">
-			</div>
-			<div class="opis">
-				<br> Michał <br>
-				<div class="blue_message">666-777-999</div>
-			</div>
-			<div id="pracownik2">
-		    	<img class="img-circle" src="images/pan_andrzej.jpg">
-			</div>
-			<div class="opis">
-				<br> Andrzej <br>
-				<div class="blue_message">666-777-999</div>	
-		</div>
-	</div>
-</div>
+		<img id="fotka2" class="img-circle" src="images/pan_michal.jpg">
+		<h1 id="imie2"> Andrzej </h1>
+		<h1 id="numer2" class="blue_message">123-456-735</h1>
+		<button id="btn2" type="button"><a href="tel:+48324343493"></a>ZADZWOŃ</button> 		
 
-	
+	</div>
 </div>
 <!-- end kontakt -->
 
@@ -160,16 +96,16 @@
 <!-- end map -->
 
 <!-- start footer -->
-		<footer>
-			<div id="napis1">&#128241;</div>
-			<div id="napis2">32/ 43 43  493</div>
-			<div id="napis3">POROZMAWIAJ Z NASZYM SPECJALISTĄ</div>
-			<div id="napis4"><br><br>LUB NAPISZ DO NAS</div>
-			<div id="napis5">ul. Okrężna 3</div>
-			<div id="napis5">44-240 Żory</div>
-			<div id="napis5">euroamiwal@biuro.pl</div>
-			<div id="napis6">euroamiwal@biuro.pl</div>
-		</footer>
+	<footer>
+		<a href="tel:+48324343493"><i class="one fa fa-phone" aria-hidden="true"></i></a>
+		<h1 class="bolded">32/ 43 43  493</h1>
+		<h2 class="bolded">POROZMAWIAJ Z NASZYM SPECJALISTĄ</h2>
+		<h2 class="bolded">LUB NAPISZ DO NAS</h2>
+		<h2 class="bolded">ul. Okrężna 3</h2>
+		<h2 class="bolded">44-240 Żory</h2>
+		<h3 class="bolded">euroamiwal@biuro.pl</h3>
+		<h4 class="bolded">euroamiwal@biuro.pl</h4>
+	</footer>
 <!-- end footer -->
 	</body>
 			<script>
@@ -226,7 +162,8 @@
 			  });
 			});
 
-				parse();
+			parse();
 			
 	   </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>

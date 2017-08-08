@@ -1,0 +1,27 @@
+
+@media screen and (min-width: 769px) 
+{  
+	#map
+	{
+		margin-top: 40px;
+		padding-top: 30px;
+		iframe
+		{	
+			position: relative;
+			pointer-events: none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+
+	#map
+	{
+		width: 100%;
+		iframe
+		{	
+			pointer-events: none;
+		}
+	}
+}

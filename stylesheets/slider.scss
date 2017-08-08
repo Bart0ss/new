@@ -1,0 +1,70 @@
+
+@media screen and (min-width: 769px) 
+{  
+	#slider
+	{
+		margin-top: 25px;
+		width: 100%;
+		height: 690px;
+	
+		background-image: url(images/strona_glowna_slider.jpg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		object-fit: fill;
+		h1
+		{
+			width: 540px;
+			text-align: center;
+			font-size: 42px;
+			font-weight: bold;
+			font-family: 'Source Sans Pro', sans-serif;
+			color: white;
+			background-color: black;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+	#slider
+	{
+		height: 690px;
+		width: 100%;
+		background-image: url(images/strona_glowna_slider.jpg);
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-weight: bold;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+
+		@media screen and (max-width: 550px) 
+		{  
+			h1
+			{
+				font-size: 30px;
+				background-color: black;
+			}
+		}
+
+		@media screen and (min-width: 551px) 
+		{  
+			h1
+			{
+				font-size: 42px;
+				background-color: black;
+			}
+		}
+		@media screen and (min-width: 280px)  and (max-width: 364px)
+		{  
+			h1
+			{
+				font-size: 35px;
+				background-color: black;
+			}
+		}
+	}
+}

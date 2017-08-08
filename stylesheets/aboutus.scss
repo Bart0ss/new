@@ -1,0 +1,143 @@
+
+@media screen and (min-width: 769px) 
+{  
+#aboutus
+	{
+		margin-top: 30px;
+		padding-bottom: 20px;
+		h1
+		{
+			text-align: center;
+			font-size: 25px;
+			position: relative;
+			top: 11px;
+			padding-bottom: 5px;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		.entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+		ul
+		{
+			margin-top: 50px;
+			padding-left: 50px;
+			padding-right: 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			.img
+			{
+				margin-left: 30px;
+				order: 2;
+				width: 500px;
+				height: 400px;
+			}
+			.text
+			{	
+				width: 400px;
+				order: 1;
+				margin-top: 20px;
+				height: 200px;
+				padding-left: 25px;
+				font-size: 18px;
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 768px) 
+{
+#aboutus
+	{
+		margin-top: 30px;
+		background-color:  rgb(244, 248, 249);
+		padding-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		h1
+		{
+			text-align: center;
+			font-size: 25px;
+			position: relative;
+			top: 11px;
+			padding-bottom: 5px;
+			border-bottom-width: 3px;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+		}
+		.entry
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pasek
+		{
+			margin-top: 40px;
+			width: 30%;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: lightgray;	
+		}
+		
+		ul
+		{
+			padding-top: 25px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			
+			.img
+			{
+				margin-left: auto;
+				margin-right: auto;
+				padding-right: 30px;
+				width: 100%;
+				height: 400px;
+			}
+			@media screen and (max-width: 550px) 
+			{  
+				.text
+				{					
+					margin-right: 10px;
+					height: 500px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 18px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+			}
+			@media screen and (min-width: 551px) 
+			{  
+				.text
+				{				
+					margin-right: 10px;
+					height: 300px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 18px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+			}
+		}
+	}
+}
