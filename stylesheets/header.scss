@@ -146,22 +146,14 @@
 				}
 				li:nth-child(4)
 				{
-					@media screen and (max-width: 340px) 
-					{  
+					@media screen and (min-width: 280px)  and (max-width: 330px)
+					{
 						height: 150px;
-					}
-					@media screen and (max-width: 300px) 
-					{  
-						height: 150px;
-					}
-					@media screen and (min-width: 341px) 
-					{  
+					}		
+					@media screen and (min-width: 310px)  and (max-width: 450px)
+					{
 						height: 100px;
-					}	
-					@media screen and (min-width: 471px) 
-					{  
-						height: 90px;
-					}
+					}		
 					@media screen and (min-width: 491px) 
 					{  
 						height: 50px;

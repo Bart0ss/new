@@ -50,10 +50,9 @@
 		grid-area: employees;
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 20% 20% 5% 20%;
+		grid-template-columns: 10% 25% 10% 10%;
 		grid-template-rows: 50px 50px 50px 50px;
 		
-				
 		button
 		{
 			background-color: rgb(20,138,225);
@@ -75,6 +74,9 @@
 		}
 		#fotka1
 		{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			grid-column: 1 / 2;
 			grid-row: 2 / 5;
 		}	
@@ -126,7 +128,7 @@
 			position: relative;
 			bottom: 2vw;
 			grid-column: 5;
-			grid-row: 4;
+			grid-row: 4;	
 		}
 
 	}
@@ -141,8 +143,8 @@
 		border-top-color: lightgray;
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 30% 20% 20% 20%;
-		grid-template-rows: 400px 250px;
+		grid-template-columns: 10% 40% 40% 10%;
+		grid-template-rows: 400px 270px;
 		grid-template-areas:
 			"....... form info ......."
 			"....... employees employees .......";
@@ -168,92 +170,193 @@
 
 @media screen and (max-width: 768px) 
 {	
-	#kontakt
+	.blue_message
 	{
-
-		margin-top: 100px;
-		height: 1300px;
-		margin-left: 30px;
-
-		#pc
+		color: #148AE1;
+		font-weight: bold;
+	}
+	.form
+	{
+		text-align: center;
+		grid-area: form;
+		input, textarea
 		{
-			display: none;
+			position: relative;
+			right: 5px;
+			width: 90vw;
+			margin-top: 10px;
+			border-radius: 5px;
 		}
-		#mobile
+		.button, #submit
 		{
+			background-color:  #148AE1;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	}
+	.info 
+	{
+		text-align: center;
+		grid-area: info;
+		i
+		{
+			width: 25px;
+		}
+		.day
+		{
+			width: 120px;
+			float: left;
+			@media screen and (min-width: 400px) 
+			{	
+				margin-left: 20vw*1.1;
+			}	
+			@media screen and (min-width: 300px) and (max-width: 317px)
+			{	
+				margin-left: 10vw;
+			}		
+			@media screen and (min-width: 317px) and (max-width: 400px)
+			{	
+				margin-left: 15vw;
+			}		
+			@media screen and (max-width: 400px) 
+			{	
+
+			}
+		}
+		time
+		{
+
+		}
+	}
+	
+	.employees 
+	{
+		grid-area: employees;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 100%;
+		grid-template-rows: 60px 150px 50px 50px 50px 150px 50px 50px 50px;
+		text-align: center;
+				
+		button
+		{
+			background-color: rgb(20,138,225);
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			width: 150px;
+		}
+		#employees_text
+		{
+			grid-row: 1;
+		}
+		#fotka1
+		{
+			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			
-			
-			width: 300px;
-			margin-top: 40px;
-			height: 1200px;
-			
-			text-align: center;
-			
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			
-			font-size: 21px;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: bold;
-			
-			#form
-			{
-				position: relative;
-				right: 15px;
-				@media screen and (max-width: 340px) 
-				{ 
-					position: relative;
-					right: 35px;
-					margin-right: 10px;
-				}
-			}
+			grid-row: 2;
+		}	
+		
+		#imie1
+		{
+			position: relative;
+			bottom: 20px;
+			grid-row: 3;
+		}
+		#numer1
+		{
+			position: relative;
+			bottom: 40px;
+			grid-row: 4;
+		}
+		#btn1
+		{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			bottom: 30px;
+			grid-row: 5;
+		}	
+		
+		#fotka2
+		{	
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			grid-row: 6;
+		}	
+		
+		#imie2
+		{
+			position: relative;
+			bottom: 20px;
+			grid-row: 7;
+		}
+		#numer2
+		{
+			position: relative;
+			bottom: 40px;
+			grid-row: 8;
+		}
+		#btn2
+		{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			bottom: 30px;
+			grid-row: 9;	
+		}
 
-			#kadra
-			{
-				margin-top: 30px;
-			}
-			.fa
-			{
-				margin-top: 15px;
-			}
-			.fa::first-letter
-			{
-				color: rgb(20,138,225);
-			}
-
-			.blue_message
-			{
-				font-weight: bold;
-				font-size: 25px;
-				color: rgb(20,138,225);
-			}
-
-			.img-circle
-			{
-				margin-top: 25px;
-			}	
-
-			.img-circle:first-child
-			{
-				margin-top: 5px;
-			}
-			
-			.button, #submit
-			{
-				background-color: rgb(20,138,225);
-				border: none;
-				color: white;
-				padding: 15px 32px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-			}
+	}
+	
+	#kontakt
+	{
+		margin-top: 20px;
+		padding-top: 60px;
+		color: black;
+		border-top-width: 2px;
+		border-top-style: solid;
+		border-top-color: lightgray;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 100%;
+		grid-template-rows: 30px 25p 55px;
+		grid-template-areas:
+			"form"
+			"info"
+			"employees"
+			"employees";
+		background-color: #fff;
+		color: #444;
+		
+		.input
+		{
+			margin-top: 5px;
+			color: black;
+		}
+		
+		.box 
+		{
+		  background-color: #444;
+		  color: #fff;
+		  border-radius: 5px;
+		  padding: 20px;
+		  font-size: 150%;
 		}
 	}
 }
