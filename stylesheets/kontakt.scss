@@ -136,14 +136,14 @@
 	#kontakt
 	{
 		margin-top: 20px;
-		padding-top: 60px;
+		padding-top: 40px;
 		color: black;
 		border-top-width: 2px;
 		border-top-style: solid;
 		border-top-color: lightgray;
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 10% 40% 40% 10%;
+		grid-template-columns: 20% 40% 40% 10%;
 		grid-template-rows: 400px 270px;
 		grid-template-areas:
 			"....... form info ......."
@@ -159,8 +159,8 @@
 		
 		.box 
 		{
-		  background-color: #444;
-		  color: #fff;
+		  background-color: #fff;
+		  color: #000;
 		  border-radius: 5px;
 		  padding: 20px;
 		  font-size: 150%;
@@ -218,11 +218,11 @@
 			}	
 			@media screen and (min-width: 300px) and (max-width: 317px)
 			{	
-				margin-left: 10vw;
+				margin-left: 8vw;
 			}		
 			@media screen and (min-width: 317px) and (max-width: 400px)
 			{	
-				margin-left: 15vw;
+				margin-left: 10vw;
 			}		
 			@media screen and (max-width: 400px) 
 			{	
@@ -241,7 +241,7 @@
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 100%;
-		grid-template-rows: 60px 150px 50px 50px 50px 150px 50px 50px 50px;
+		grid-template-rows: 60px 150px 50px 50px 50px 150px 50pxx;
 		text-align: center;
 				
 		button
@@ -326,8 +326,7 @@
 	
 	#kontakt
 	{
-		margin-top: 20px;
-		padding-top: 60px;
+		padding-top: 10px;
 		color: black;
 		border-top-width: 2px;
 		border-top-style: solid;
@@ -335,7 +334,6 @@
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 100%;
-		grid-template-rows: 30px 25p 55px;
 		grid-template-areas:
 			"form"
 			"info"
@@ -352,8 +350,8 @@
 		
 		.box 
 		{
-		  background-color: #444;
-		  color: #fff;
+		  background-color: #fff;
+		  color: #000;
 		  border-radius: 5px;
 		  padding: 20px;
 		  font-size: 150%;

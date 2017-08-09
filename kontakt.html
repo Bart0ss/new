@@ -91,9 +91,23 @@
 <!-- end kontakt -->
 
 <!-- start map -->
-<div id="map">
-<iframe src="https://www.google.com/maps?q=ŻORY OKRĘŻNA 3 &output=embed" width="100%" height="400" frameborder="0" style="border:0"></iframe>
-</div>
+		<div id="map">
+			<iframe src="https://www.google.com/maps?q=ŻORY OKRĘŻNA 3 &output=embed" width="100%" height="335" 	frameborder="0" style="border:0px;"></iframe>
+		</div>
+		
+		<script>
+			
+			$('#map').click(function ()
+			{
+			   $('#map iframe').css("pointer-events", "auto");
+			});
+
+			$( "#map" ).mouseleave(function()
+			{
+			  $('#map iframe').css("pointer-events", "none"); 
+			});
+			
+		</script>
 <!-- end map -->
 
 <!-- start footer -->
