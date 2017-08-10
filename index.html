@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
-
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 	
     <body>
@@ -48,74 +48,6 @@
 				DO NAPRAWY SPECJALISTOM</h1>
 	
 		</div>
-		
-		<script>
-
-			window.setInterval
-			(
-				function()
-				{
-				 gotoNext();
-				}, 1000
-			);
-			
-			document.onkeydown = checkKey;
-			
-			function checkKey(e) 
-			{
-				e = e || window.event;
-
-				if (e.keyCode == '37') 
-				{
-					gotoPrevious();
-			
-				}
-				else if (e.keyCode == '39') 
-				{
-					gotoNext();
-				}
-			}
-			
-			var pathstring =  "url(images/";
-			var background_array = ["strona_glowna_slider.jpg","stopka.jpg","paralax.jpg"];
-			var background_counter = 0;
-			
-			function setBackground()
-			{	
-				var doc = document.getElementById("slider");
-				doc.style.backgroundImage = pathstring + background_array[background_counter] + ')';
-				doc.style.backgroundPosition = "center";	
-		
-			}
-			
-			function gotoNext()
-			{
-				if (background_counter == background_array.length -1)
-				{
-					background_counter=0;
-					setBackground();
-				}
-				else if (background_counter < background_array.length)
-				{
-					background_counter++;
-					setBackground();
-				}
-			}	
-			function gotoPrevious()
-			{
-				if (background_counter > 0)
-				{
-					background_counter--;
-					setBackground();
-				}
-				else if (background_counter == 0)
-				{
-					background_counter = background_array.length -1;
-					setBackground();
-				}
-			}
-			</script>
-			
 <!-- end slider -->
 
 <!-- start services -->
@@ -189,39 +121,39 @@
 <div id="marki">
 		<div class="entry">
 			<div class="pasek"></div>
-				<div class="napis">NAPRAWIAMY SAMOCHODY WSZYSTKICH MAREK</div>
+				<h1>NAPRAWIAMY SAMOCHODY WSZYSTKICH MAREK</h1>
 			<div class="pasek"></div>
 		</div>
 	<div id="znaczki">
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/bmw.png"  width="100%" height="100%" alt="bmw">
 		</figure>	
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/ford.png"  width="100%%" height="100%" alt="ford">
 		</figure>	
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/mazda.png" width="100%" height="100%" alt="mazda">
 		</figure>
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/peugeot.png"  width="100%" height="100%" alt="peugeot">
 		</figure>
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/renault.png"  width="100%" height="100%" alt="renault">
 		</figure>
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/sberski.png"  width="100%" height="100%" alt="volkswagen">
 		</figure>
 
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		<figure class="car_img">
 			<img src="marki/skoda.png"  width="100%" height="100%" alt="skoda">
 		</figure>
-
-		<figure class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+		
+		<figure class="car_img">
 			<img src="marki/toyota.png"  width="100%" height="100%" alt="toyota">
 		</figure>
 	</div>
@@ -233,20 +165,6 @@
 		<div id="map">
 			<iframe src="https://www.google.com/maps?q=ŻORY OKRĘŻNA 3 &output=embed" width="100%" height="335" 	frameborder="0" style="border:0px;"></iframe>
 		</div>
-		
-		<script>
-			
-			$('#map').click(function ()
-			{
-			   $('#map iframe').css("pointer-events", "auto");
-			});
-
-			$( "#map" ).mouseleave(function()
-			{
-			  $('#map iframe').css("pointer-events", "none"); 
-			});
-			
-		</script>
 <!-- end map -->
 		
 <!-- start footer -->
@@ -261,65 +179,8 @@
 		<h4 class="bolded">euroamiwal@biuro.pl</h4>
 	</footer>
 <!-- end footer -->
-		<script>
-			function  url()
-			{
-				window.location.href = "index.html";
-			}
-			var isShown;
-				
-			if($( window ).width() >= 769)
-			{
-				isShown=false;
-			}
-			else
-			{
-				isShown=true;
-			}
-			
-			function parse()
-			{
-				if (!isShown)
-				{
-					var cusid_ele = document.getElementsByClassName('menu');
-					for (var i = 0; i < cusid_ele.length; ++i) 
-					{
-						var item = cusid_ele[i];  
-						item.style.display = "inherit";
-					}
-					isShown=true;
-				}
-				else
-				{
-					var cusid_ele = document.getElementsByClassName('menu');
-					for (var i = 0; i < cusid_ele.length; ++i) 
-					{
-						var item = cusid_ele[i];  
-						item.style.display = "none";
-					}
-					isShown=false;
-				}
-			}
-				
-			$(document).ready(function() 
-			{ 
-			  $(window).scroll(function() 
-			  {
-				if ($(window).scrollTop() > 30) 
-				{
-					$('header').addClass('header-fixed');
-				}
-				if ($(window).scrollTop() < 30) 
-				{
-					$('header').removeClass('header-fixed');
-				}
-			  });
-			});
 
-			parse();
-			
-   </script>
 
 	</body>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
 </html>

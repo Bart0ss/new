@@ -4,6 +4,7 @@
 	#marki
 	{
 		padding-top: 40px;
+		margin-bottom: 60px;
 		margin-left: auto;
 		margin-right: auto;
 		height: 200px;
@@ -11,23 +12,73 @@
 		#znaczki
 		{
 			padding-top: 40px;
-			display: flex;
-			justify-content: center;
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+			grid-template-rows: 75px;
+			grid-template-areas:
+			". img1 img2 img3 img4 img5 img6 img7 img8 .";
+
+			.car_img:nth-child(1)
+			{
+				grid-area: img1;
+			}
+
+			.car_img:nth-child(2)
+			{
+				grid-area: img2;
+			}
+
+			.car_img:nth-child(3)
+			{
+				grid-area: img3;
+			}
+
+			.car_img:nth-child(4)
+			{
+				grid-area: img4;
+			}
+
+			.car_img:nth-child(5)
+			{
+				grid-area: img5;
+			}
+
+			.car_img:nth-child(6)
+			{
+				grid-area: img6;
+			}
+
+			.car_img:nth-child(7)
+			{
+				grid-area: img7;
+			}
+
+			.car_img:nth-child(8)
+			{
+				grid-area: img8;
+			}
 		}
-		.napis
+		
+		h1
 		{
 			text-align: center;
 			font-size: 25px;
+			position: relative;
+			top: 11px;
+			padding-bottom: 5px;
 			border-bottom-width: 3px;
 			border-bottom-color: black;
 			border-bottom-style: solid;
 		}
+		
 		.entry
 		{
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 		}
+		
 		.pasek
 		{
 			margin-top: 40px;
@@ -41,32 +92,108 @@
 
 @media screen and (max-width: 768px) 
 {
-	#marki
+	#marki	
 	{
 		margin-top: 20px;
-
-			height: 760px;
+		margin-bottom: 20px;
+		padding-top: 55px;
 		
-		
-		#znaczki
+		.car_img:nth-child(1)
 		{
-			padding-top: 40px;
-			
-			figure
-			{
+			grid-area: img1;
+		}
 
+		.car_img:nth-child(2)
+		{
+			grid-area: img2;
+		}
+
+		.car_img:nth-child(3)
+		{
+			grid-area: img3;
+		}
+
+		.car_img:nth-child(4)
+		{
+			grid-area: img4;
+		}
+
+		.car_img:nth-child(5)
+		{
+			grid-area: img5;
+		}
+
+		.car_img:nth-child(6)
+		{
+			grid-area: img6;
+		}
+
+		.car_img:nth-child(7)
+		{
+			grid-area: img7;
+		}
+
+		.car_img:nth-child(8)
+		{
+			grid-area: img8;
+		}
+		
+		@media screen and (max-width: 400px) 
+		{
+			#znaczki
+			{
+				display: grid;
+				grid-gap: 25px;
+				grid-template-columns: 10% 70% 20%;
+				grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+				grid-template-areas:
+				". img1 ."
+				". img2 ."
+				". img3 ."
+				". img4 ."
+				". img5 ."
+				". img6 ."		
+				". img7 ."
+				". img8 .";
+			}
+		}
+		@media screen and (min-width: 400px) and (max-width: 600px)
+		{
+			#znaczki
+			{
+				display: grid;
+				grid-gap: 25px;
+				grid-template-columns: 5% 40% 40% 15%;
+				grid-template-rows: 100px 100px 100px 100pxx;
+				grid-template-areas:
+				". img1 img2 ."
+				". img3 img4 ."
+				". img5 img6 ."
+				". img7 img8 .";
 			}
 		}
 		
-		padding-top: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		
-		.napis
+		@media screen and (min-width: 600px) and (max-width: 768px)
+		{
+			#znaczki
+			{
+				display: grid;
+				grid-gap: 25px;
+				grid-template-columns: 7% 25% 25% 25% 18%;
+				grid-template-rows: 100px 100px 100px 100pxx;
+				grid-template-areas:
+				". img1 img2 img3 ."
+				". img4 img5 img6 ."
+				". img7 . img8 .";
+			}
+		}
+		h1
 		{
 			text-align: center;
 			font-size: 25px;
-			font-family: 'Source Sans Pro', sans-serif;
+			position: relative;
+			top: 11px;
+			padding-bottom: 5px;
 			border-bottom-width: 3px;
 			border-bottom-color: black;
 			border-bottom-style: solid;
